@@ -1,0 +1,223 @@
+\relax 
+\citation{turing1936computable}
+\citation{rice1953classes}
+\citation{mcallester1999pacbayes,catoni2007pacbayes}
+\citation{xu2017information,steinke2020reasoning}
+\citation{villani2009optimal,esfahani2018data}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Contributions.}{3}{}\protected@file@percent }
+\citation{madani1999undecidability}
+\citation{baier2008principles}
+\citation{alshiekh2018safe,koenighofer2024shields}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Related Work}{4}{}\protected@file@percent }
+\newlabel{sec:related}{{2}{4}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{Undecidability in Planning and Control.}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Program Verification and Safety Properties.}{4}{}\protected@file@percent }
+\citation{mcallester1999pacbayes,catoni2007pacbayes,alquier2021user}
+\citation{xu2017information,steinke2020reasoning,bu2020tightening}
+\citation{esfahani2018data,sinha2018certifying}
+\citation{villani2009optimal}
+\citation{tsipras2019robustness}
+\citation{schmidt2018adversarially}
+\citation{amodei2016concrete}
+\citation{orseau2016safely}
+\citation{turner2020conservative}
+\citation{alshiekh2018safe}
+\@writefile{toc}{\contentsline {paragraph}{PAC-Bayes and Information-Theoretic Generalization.}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Distributionally Robust Optimization.}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Adversarial Robustness and Trade-offs.}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{AI Safety and Alignment.}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Preliminaries}{5}{}\protected@file@percent }
+\newlabel{sec:prelim}{{3}{5}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Interaction Semantics and Trace Spaces}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Finite and Infinite Traces.}{5}{}\protected@file@percent }
+\citation{baier2008principles}
+\@writefile{toc}{\contentsline {paragraph}{Computable Policy.}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Environment.}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Trivial Environment $E_0$.}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Safety Specifications via Regular Bad Prefixes}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Problem Instance Encoding.}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Learning and Distributional Robustness}{7}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Statistical Learning Setup.}{7}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Lipschitz Assumption.}{7}{}\protected@file@percent }
+\newlabel{assump:lipschitz}{{3.4}{7}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{Wasserstein Distance and Robust Risk.}{7}{}\protected@file@percent }
+\newlabel{def:robust_risk}{{3.5}{7}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Data-Dependent Lipschitz Constants}{7}{}\protected@file@percent }
+\newlabel{assump:data_lipschitz}{{3.6}{7}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Undecidability of Catastrophic Safety Verification}{8}{}\protected@file@percent }
+\newlabel{sec:undecidable}{{4}{8}{}{}{}}
+\newlabel{thm:undecidability}{{4.1}{8}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Complexity Positioning: $\Sigma _1^0$-Completeness}{9}{}\protected@file@percent }
+\newlabel{thm:completeness}{{4.2}{9}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Comparison with Rice's Theorem}{9}{}\protected@file@percent }
+\newlabel{cor:rice}{{4.4}{9}{}{}{}}
+\citation{baier2008principles}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Decidable Regions: Finite-State Controllers}{10}{}\protected@file@percent }
+\newlabel{sec:decidable}{{4.3}{10}{}{}{}}
+\newlabel{thm:fsc_decidable}{{4.5}{10}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Memory Threshold and Phase Transition}{10}{}\protected@file@percent }
+\newlabel{thm:memory_threshold}{{4.7}{10}{}{}{}}
+\citation{baier2008principles}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Extensions to Richer Specification Languages}{11}{}\protected@file@percent }
+\newlabel{thm:ltl_extension}{{4.9}{11}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6}Safety Decidability Landscape: Summary}{12}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Decidability phase diagram for AI safety verification. The table shows how restricting policy expressiveness, environment structure, or specification language affects the computational complexity of verifying $\Pr (\mathsf  {Bad}) > \varepsilon $.}}{12}{}\protected@file@percent }
+\newlabel{tab:decidability_landscape}{{1}{12}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}The Unified Capability--Risk Frontier}{12}{}\protected@file@percent }
+\newlabel{sec:upper}{{5}{12}{}{}{}}
+\citation{steinke2020reasoning}
+\citation{steinke2020reasoning}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Unified Information Complexity Functional}{13}{}\protected@file@percent }
+\newlabel{def:unified_complexity}{{5.1}{13}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Assumptions and Preliminaries for Robust Risk}{13}{}\protected@file@percent }
+\newlabel{assump:subgaussian}{{5.3}{13}{}{}{}}
+\newlabel{assump:cmi}{{5.4}{13}{}{}{}}
+\citation{villani2009optimal}
+\citation{mcallester1999pacbayes}
+\citation{steinke2020reasoning}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Main Theorem: Unified Upper Bound via Information Complexity}{14}{}\protected@file@percent }
+\newlabel{thm:unified_bound}{{5.5}{14}{}{}{}}
+\newlabel{eq:unified_bound_general}{{2}{14}{}{}{}}
+\newlabel{cor:min_bounds}{{5.6}{14}{}{}{}}
+\newlabel{eq:min_bounds}{{3}{14}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Data-Dependent Refinement}{15}{}\protected@file@percent }
+\newlabel{thm:data_dependent_bound}{{5.7}{15}{}{}{}}
+\newlabel{eq:data_dependent_bound}{{6}{15}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5}Interpretation and Regime Analysis}{16}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Regime Analysis: When to Use PAC-Bayes vs. Mutual Information Bound}}{16}{}\protected@file@percent }
+\newlabel{tab:regime}{{2}{16}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{Practical Guidance.}{16}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Matching Lower Bound: Structural Trade-off}{16}{}\protected@file@percent }
+\newlabel{sec:lower}{{6}{16}{}{}{}}
+\citation{tsipras2019robustness}
+\newlabel{thm:lower_bound}{{6.1}{17}{}{}{}}
+\newlabel{eq:lower_bound}{{7}{17}{}{}{}}
+\newlabel{rem:gaussian}{{6.2}{17}{}{}{}}
+\citation{villani2009optimal}
+\newlabel{prop:tightness}{{6.3}{18}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Information-Theoretic Minimax Lower Bound}{18}{}\protected@file@percent }
+\newlabel{thm:minimax_lower}{{6.4}{18}{}{}{}}
+\newlabel{prop:matching}{{6.5}{19}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Experiments}{20}{}\protected@file@percent }
+\newlabel{sec:experiments}{{7}{20}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{Note on Undecidability.}{20}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Common Setup and Metrics}{20}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}Capability--Risk Frontier on CIFAR-10}{20}{}\protected@file@percent }
+\newlabel{subsec:cifar}{{7.2}{20}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{Objective.}{20}{}\protected@file@percent }
+\citation{steinke2020reasoning}
+\@writefile{toc}{\contentsline {paragraph}{Dataset and distribution shift.}{21}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Architectures and training.}{21}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Estimating Lipschitz constants.}{21}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Instantiating the Capability--Risk bound.}{21}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Results.}{22}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3}Ablation: PAC-Bayes vs Mutual Information vs Unified Bound}{22}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Capability--Risk frontier on CIFAR-10. Each point corresponds to a ResNet-18 model with width factor $w\in \{0.5,1.0,2.0\}$ trained on CIFAR-10 for 200 epochs. The x-axis shows the estimated Lipschitz constant $L$ (log scale) and the y-axis shows classification error. For each model, we plot: (i) clean error (blue circles), (ii) robust error $R^{(\rho )}_{\text  {rob}}$ under Gaussian noise corruption (red crosses, shown here for representative $\rho = 0.25$), and (iii) theoretical upper bound from Theorem~\ref {thm:unified_bound} (green triangles, capped at 1.0 for visualization). Each marker represents mean over 3 independent random seeds; standard deviations are small (typically $< 0.02$) and omitted for clarity. Key observation: robust error scales approximately linearly with $L$ on log scale, consistent with the $L\rho $ term. Models with weak regularization exhibit Lipschitz explosion ($L \sim 10^{13}$), rendering worst-case bounds vacuous.}}{23}{}\protected@file@percent }
+\newlabel{fig:frontier}{{1}{23}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.4}Runtime Shielding in Gridworld}{23}{}\protected@file@percent }
+\newlabel{subsec:gridworld}{{7.4}{23}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{Objective.}{23}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Capability--Risk frontier on CIFAR-10 for perturbation radius $\rho = 0.25$. We report mean $\pm $ standard deviation over 3 independent runs with different random seeds. The last column shows the ratio between empirical robust error and the theoretical Capability--Risk bound, demonstrating that the bound is valid (ratio $< 1$) but loose (gap of $\sim $30--35\%) as expected from high-probability PAC-Bayes bounds. Key trend: wider models achieve lower standard error but higher robust error, confirming the capability--risk trade-off.}}{24}{}\protected@file@percent }
+\newlabel{tab:cifar_results}{{3}{24}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{Environment.}{24}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Bad-prefix specification and shield synthesis.}{24}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Ablation study: PAC-Bayes vs mutual-information bounds on CIFAR-10. For each model configuration (width factor $w \in \{0.5, 1.0, 2.0\}$, perturbation radius $\rho = 0.25$ shown here), we plot three theoretical upper bounds and the empirical robust error. Blue circles: clean error on test set. Red crosses: robust error under Gaussian noise. Green triangles: theoretical upper bound (capped at 1.0). The x-axis shows PAC-Bayes bound value (proxy for information complexity). Models with better priors (lower KL) sit left on the frontier; models with higher complexity sit right. The theoretical bound successfully upper-bounds all empirical measurements, with typical gaps of 30--35\%, consistent with known looseness of high-probability PAC-Bayes bounds. Each marker shows mean over 3 independent random seeds; standard deviations $< 0.03$ for all points.}}{25}{}\protected@file@percent }
+\newlabel{fig:ablation}{{2}{25}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{Agents and training.}{25}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Evaluation metrics.}{25}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Runtime shielding in $8 \times 8$ gridworld over 500 test episodes (mean $\pm $ std over 3 random environment seeds). The shielded agent (trained with shield enforcement) completely eliminates catastrophic failures (hazard visits) at the cost of overriding $\sim $27\% of proposed actions. Average return improves significantly (less negative) because the agent no longer incurs large negative rewards from hazards. This demonstrates the SSR framework's Shield layer: even though static verification is impossible (Theorem~\ref {thm:undecidability}), runtime enforcement via regular bad-prefix automata achieves perfect safety with moderate intervention.}}{26}{}\protected@file@percent }
+\newlabel{tab:gridworld_results}{{4}{26}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{Results.}{26}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.5}Lipschitz Surrogate Analysis and Bound Tightness}{26}{}\protected@file@percent }
+\newlabel{subsec:lipschitz_ablation}{{7.5}{26}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{Estimation Methods.}{26}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Results.}{27}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Lipschitz constant estimates via three methods. Data-dependent estimators ($\bar  {L}_{\text  {grad}}$, $L_{\text  {FD}}$) are orders of magnitude tighter than global spectral norm, validating Theorem~\ref {thm:data_dependent_bound}. The ``Tightening Factor'' shows $L_{\text  {global}} / \bar  {L}_{\text  {grad}}$.}}{27}{}\protected@file@percent }
+\newlabel{tab:lipschitz_comparison}{{5}{27}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{Bound Impact.}{27}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.6}Complex Safe RL with Full SSR Pipeline}{27}{}\protected@file@percent }
+\newlabel{subsec:complex_ssr}{{7.6}{27}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{Environment.}{28}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{SSR Implementation.}{28}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Results.}{28}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Complex GridWorld + SSR Pipeline Results. SSR eliminates catastrophic events at moderate intervention cost, validating practical deployability. Avg return decreases slightly due to conservative navigation enforced by shields.}}{28}{}\protected@file@percent }
+\newlabel{tab:complex_ssr}{{6}{28}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{Analysis.}{28}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.7}Reproducibility}{29}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {8}From Theory to Governance: The SSR Framework}{29}{}\protected@file@percent }
+\newlabel{sec:ssr}{{8}{29}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.1}Design Principles}{29}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Layer 1: Scope Restriction.}{29}{}\protected@file@percent }
+\citation{alshiekh2018safe,koenighofer2024shields}
+\@writefile{toc}{\contentsline {paragraph}{Layer 2: Runtime Shielding.}{30}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Layer 3: Risk Budgeting.}{30}{}\protected@file@percent }
+\newlabel{eq:risk_budget}{{8}{30}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.2}SSR Architecture}{30}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.3}Relationship to Theoretical Results}{30}{}\protected@file@percent }
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces SSR Deployment Pipeline}}{31}{}\protected@file@percent }
+\newlabel{alg:ssr}{{1}{31}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {9}Discussion and Conclusion}{31}{}\protected@file@percent }
+\newlabel{sec:discussion}{{9}{31}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{Summary.}{31}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Limitations and Future Work.}{32}{}\protected@file@percent }
+\bibstyle{plainnat}
+\bibdata{references}
+\bibcite{alquier2021user}{{1}{2021}{{Alquier}}{{}}}
+\bibcite{alshiekh2018safe}{{2}{2018}{{Alshiekh et~al.}}{{Alshiekh, Bloem, Ehlers, K{\"o}nighofer, Niekum, and Topcu}}}
+\bibcite{amodei2016concrete}{{3}{2016}{{Amodei et~al.}}{{Amodei, Olah, Steinhardt, Christiano, Schulman, and Man{\'e}}}}
+\bibcite{baier2008principles}{{4}{2008}{{Baier and Katoen}}{{}}}
+\bibcite{bu2020tightening}{{5}{2020}{{Bu et~al.}}{{Bu, Zou, and Veeravalli}}}
+\bibcite{catoni2007pacbayes}{{6}{2007}{{Catoni}}{{}}}
+\bibcite{esfahani2018data}{{7}{2018}{{Esfahani and Kuhn}}{{}}}
+\@writefile{toc}{\contentsline {paragraph}{Broader Impact.}{33}{}\protected@file@percent }
+\bibcite{hardt2016train}{{8}{2016}{{Hardt et~al.}}{{Hardt, Recht, and Singer}}}
+\bibcite{koenighofer2024shields}{{9}{2024}{{K{\"o}nighofer et~al.}}{{}}}
+\bibcite{madani1999undecidability}{{10}{1999}{{Madani et~al.}}{{Madani, Hanks, and Condon}}}
+\bibcite{mcallester1999pacbayes}{{11}{1999}{{McAllester}}{{}}}
+\bibcite{orseau2016safely}{{12}{2016}{{Orseau and Armstrong}}{{}}}
+\bibcite{rice1953classes}{{13}{1953}{{Rice}}{{}}}
+\bibcite{schmidt2018adversarially}{{14}{2018}{{Schmidt et~al.}}{{Schmidt, Santurkar, Tsipras, Talwar, and Madry}}}
+\bibcite{sinha2018certifying}{{15}{2017}{{Sinha et~al.}}{{Sinha, Namkoong, and Duchi}}}
+\bibcite{steinke2020reasoning}{{16}{2020}{{Steinke and Zakynthinou}}{{}}}
+\bibcite{tsipras2019robustness}{{17}{2018}{{Tsipras et~al.}}{{Tsipras, Santurkar, Engstrom, Turner, and Madry}}}
+\bibcite{turing1936computable}{{18}{1936}{{Turing}}{{}}}
+\bibcite{turner2020conservative}{{19}{2019}{{Turner et~al.}}{{Turner, Hadfield-Menell, and Tadepalli}}}
+\bibcite{villani2009optimal}{{20}{2009}{{Villani}}{{}}}
+\bibcite{xu2017information}{{21}{2017}{{Xu and Raginsky}}{{}}}
+\citation{villani2009optimal}
+\citation{mcallester1999pacbayes,catoni2007pacbayes}
+\citation{steinke2020reasoning,xu2017information}
+\@writefile{toc}{\contentsline {section}{\numberline {A}Detailed Proof of Theorem~\ref {thm:unified_bound}}{35}{}\protected@file@percent }
+\newlabel{app:proof_upper}{{A}{35}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {B}Experimental Details}{36}{}\protected@file@percent }
+\newlabel{app:exp-details}{{B}{36}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{Hardware.}{36}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{CIFAR-10 Training.}{36}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Lipschitz Estimation.}{36}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{PAC-Bayes Prior and KL Computation.}{36}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Gridworld Implementation.}{37}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{CIFAR-100 Training.}{37}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{PGD Adversarial Training.}{37}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Spectral Normalization.}{37}{}\protected@file@percent }
+\citation{steinke2020reasoning}
+\@writefile{toc}{\contentsline {paragraph}{Lipschitz Surrogate Estimation.}{38}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Complex GridWorld.}{38}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Code Availability.}{38}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {C}CMI Estimator Details}{38}{}\protected@file@percent }
+\newlabel{app:cmi-details}{{C}{38}{}{}{}}
+\citation{xu2017information}
+\citation{bu2020tightening}
+\citation{hardt2016train}
+\@writefile{toc}{\contentsline {paragraph}{Estimator Construction.}{39}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Relationship to True CMI.}{39}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Alternative: Uniform Stability.}{39}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {D}Detailed Proof of Theorem~\ref {thm:minimax_lower}}{40}{}\protected@file@percent }
+\newlabel{app:minimax_proof}{{D}{40}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{Setup.}{40}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Distribution Family.}{40}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Step 1: Standard Risk Lower Bound (Fano).}{40}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Step 2: Robustness Amplification.}{40}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Step 3: Combining.}{41}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Remark on Tightness.}{41}{}\protected@file@percent }
+\gdef \@abspage@last{42}

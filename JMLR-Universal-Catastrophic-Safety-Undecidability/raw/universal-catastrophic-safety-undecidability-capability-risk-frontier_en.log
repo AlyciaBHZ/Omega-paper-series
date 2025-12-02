@@ -1,0 +1,633 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.11.19)  1 DEC 2025 01:48
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./universal-catastrophic-safety-undecidability-capability-risk-frontier_en.te
+x
+(universal-catastrophic-safety-undecidability-capability-risk-frontier_en.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-04>
+(C:\Users\zwl62\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
+(C:\Users\zwl62\AppData\Local\Programs\MiKTeX\tex/latex/base\size11.clo
+File: size11.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count187
+\c@section=\count188
+\c@subsection=\count189
+\c@subsubsection=\count190
+\c@paragraph=\count191
+\c@subparagraph=\count192
+\c@figure=\count193
+\c@table=\count194
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+) (jmlr2e.sty
+Package: jmlr2e 
+(C:\Users\zwl62\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip50
+\bibsep=\skip51
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count195
+) (C:\Users\zwl62\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+(C:\Users\zwl62\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+) (C:\Users\zwl62\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+(C:\Users\zwl62\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(C:\Users\zwl62\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+
+(C:\Users\zwl62\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen141
+\Gin@req@width=\dimen142
+) (C:\Users\zwl62\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks18
+\thm@bodyfont=\toks19
+\thm@headfont=\toks20
+\thm@notefont=\toks21
+\thm@headpunct=\toks22
+\thm@preskip=\skip52
+\thm@postskip=\skip53
+\thm@headsep=\skip54
+\dth@everypar=\toks23
+)
+\c@theorem=\count196
+) (C:\Users\zwl62\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2023/05/13 v2.17o AMS math features
+\@mathmargin=\skip55
+For additional information on amsmath, use the `?' option.
+(C:\Users\zwl62\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+(C:\Users\zwl62\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks24
+\ex@=\dimen143
+)) (C:\Users\zwl62\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen144
+) (C:\Users\zwl62\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count197
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count198
+\leftroot@=\count199
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count266
+\DOTSCASE@=\count267
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box51
+\strutbox@=\box52
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen145
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count268
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count269
+\dotsspace@=\muskip16
+\c@parentequation=\count270
+\dspbrk@lvl=\count271
+\tag@help=\toks25
+\row@=\count272
+\column@=\count273
+\maxfields@=\count274
+\andhelp@=\toks26
+\eqnshift@=\dimen146
+\alignsep@=\dimen147
+\tagshift@=\dimen148
+\tagwidth@=\dimen149
+\totwidth@=\dimen150
+\lineht@=\dimen151
+\@envbody=\toks27
+\multlinegap=\skip56
+\multlinetaggap=\skip57
+\mathdisplay@stack=\toks28
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+) (C:\Users\zwl62\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+(C:\Users\zwl62\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(C:\Users\zwl62\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mathtools.sty
+Package: mathtools 2024/10/04 v1.31 mathematical typesetting tools
+(C:\Users\zwl62\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count275
+\calc@Bcount=\count276
+\calc@Adimen=\dimen152
+\calc@Bdimen=\dimen153
+\calc@Askip=\skip58
+\calc@Bskip=\skip59
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count277
+\calc@Cskip=\skip60
+) (C:\Users\zwl62\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mhsetup.sty
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+)
+\g_MT_multlinerow_int=\count278
+\l_MT_multwidth_dim=\dimen154
+\origjot=\skip61
+\l_MT_shortvdotswithinadjustabove_dim=\dimen155
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen156
+\l_MT_above_intertext_sep=\dimen157
+\l_MT_below_intertext_sep=\dimen158
+\l_MT_above_shortintertext_sep=\dimen159
+\l_MT_below_shortintertext_sep=\dimen160
+\xmathstrut@box=\box53
+\xmathstrut@dim=\dimen161
+) (C:\Users\zwl62\AppData\Local\Programs\MiKTeX\tex/latex/braket\braket.sty) (C
+:\Users\zwl62\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen162
+\lightrulewidth=\dimen163
+\cmidrulewidth=\dimen164
+\belowrulesep=\dimen165
+\belowbottomsep=\dimen166
+\aboverulesep=\dimen167
+\abovetopsep=\dimen168
+\cmidrulesep=\dimen169
+\cmidrulekern=\dimen170
+\defaultaddspace=\dimen171
+\@cmidla=\count279
+\@cmidlb=\count280
+\@aboverulesep=\dimen172
+\@belowrulesep=\dimen173
+\@thisruleclass=\count281
+\@lastruleclass=\count282
+\@thisrulewidth=\dimen174
+)
+(C:\Users\zwl62\AppData\Local\Programs\MiKTeX\tex/latex/algorithms\algorithm.st
+y
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+(C:\Users\zwl62\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count283
+\float@exts=\toks29
+\float@box=\box54
+\@float@everytoks=\toks30
+\@floatcapt=\box55
+) (C:\Users\zwl62\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+)
+\@float@every@algorithm=\toks31
+\c@algorithm=\count284
+)
+(C:\Users\zwl62\AppData\Local\Programs\MiKTeX\tex/latex/algorithms\algorithmic.
+sty
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+\c@ALC@unique=\count285
+\c@ALC@line=\count286
+\c@ALC@rem=\count287
+\c@ALC@depth=\count288
+\ALC@tlm=\skip62
+\algorithmicindent=\skip63
+) (C:\Users\zwl62\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
+(C:\Users\zwl62\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+(C:\Users\zwl62\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
+Package xcolor Info: Model `RGB' extended on input line 1366.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
+)
+(C:\Users\zwl62\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def
+File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count289
+\l__pdf_internal_box=\box56
+) (universal-catastrophic-safety-undecidability-capability-risk-frontier_en.aux
+)
+\openout1 = `universal-catastrophic-safety-undecidability-capability-risk-front
+ier_en.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+
+(C:\Users\zwl62\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+ii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count290
+\scratchdimen=\dimen175
+\scratchbox=\box57
+\nofMPsegments=\count291
+\nofMParguments=\count292
+\everyMPshowfont=\toks32
+\MPscratchCnt=\count293
+\MPscratchDim=\dimen176
+\MPnumerator=\count294
+\makeMPintoPDFobject=\count295
+\everyMPtoPDFconversion=\toks33
+)
+(C:\Users\zwl62\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+ase.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:\Users\zwl62\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
+fg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+LaTeX Font Info:    Trying to load font information for U+msa on input line 47.
+
+(C:\Users\zwl62\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 47.
+
+(C:\Users\zwl62\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Overfull \hbox (1.35643pt too wide) in paragraph at lines 52--53
+[]\OT1/cmr/bx/n/10 First (De-cid-abil-ity Land-scape)\OT1/cmr/m/n/10 , we prove
+ that ver-i-fy-ing whether
+ []
+
+
+Overfull \hbox (16.41736pt too wide) in paragraph at lines 52--53
+\OT1/cmr/m/n/10 finite-state con-trollers (The-o-rem 4.5[]), re-veal-ing a shar
+p memory-dependent
+ []
+
+
+Overfull \hbox (0.64998pt too wide) in paragraph at lines 54--55
+\OT1/cmr/m/n/10 gen-eral information-complexity func-tional $\OML/cmm/m/it/10 C
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Q[]\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 D; P\OT
+1/cmr/m/n/10 )$ (Def-i-ni-tion 5.1[])
+ []
+
+[1
+
+{C:/Users/zwl62/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+Overfull \hbox (2.1396pt too wide) in paragraph at lines 56--57
+\OT1/cmr/m/n/10 Shield--Risk) frame-work elim-i-nates catas-trophic events (72%
+$\OMS/cmsy/m/n/10 !$\OT1/cmr/m/n/10 0%) with
+ []
+
+
+Overfull \hbox (9.38965pt too wide) in paragraph at lines 56--57
+\OT1/cmr/m/n/10 27% in-ter-ven-tion rate, demon-strat-ing prac-ti-cal fea-si-bi
+l-ity of theoretically-
+ []
+
+
+Overfull \hbox (0.45706pt too wide) in paragraph at lines 67--68
+\OT1/cmr/m/n/10.95 gen-er-al-iza-tion. Wasser-stein dis-tri-bu-tion-ally ro-bus
+t op-ti-miza-tion (DRO) [Vil-
+ []
+
+[2]
+Overfull \hbox (3.32758pt too wide) in paragraph at lines 76--77
+\OT1/cmr/m/n/10.95 tran-si-tions|bounded mem-ory gives EX-P-TIME, un-bounded me
+m-
+ []
+
+
+Overfull \hbox (42.34602pt too wide) in paragraph at lines 83--84
+[]\OT1/cmr/m/it/10.95 Unified bound \OT1/cmr/m/n/10.95 (The-o-rem 5.5[]): $\OML
+/cmm/m/it/10.95 R[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 Q[]\OT1/cmr/m/n/10.9
+5 ) \OMS/cmsy/m/n/10.95 ^^T []\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 Q[]\OT1/c
+mr/m/n/10.95 ) + [] +
+ []
+
+
+Overfull \hbox (53.3863pt too wide) in paragraph at lines 85--86
+\OT1/cmr/m/n/10.95 bounds prove the three-term de-com-po-si-tion is un-avoid-ab
+le: $[][] [][] \OML/cmm/m/it/10.95 R[] \OMS/cmsy/m/n/10.95 ^^U
+ []
+
+
+Overfull \hbox (4.7281pt too wide) in paragraph at lines 91--92
+[]\OT1/cmr/m/it/10.95 Multi-method com-par-i-son\OT1/cmr/m/n/10.95 : Stan-dard 
+ERM, PGD ad-ver-sar-ial train-
+ []
+
+[3]
+Overfull \hbox (1.3722pt too wide) in paragraph at lines 92--93
+[]\OT1/cmr/m/it/10.95 Lipschitz sur-ro-gate anal-y-sis \OT1/cmr/m/n/10.95 (Sec-
+tion 7.5[]): Com-par-ing global spec-
+ []
+
+
+Overfull \hbox (4.66592pt too wide) in paragraph at lines 93--94
+\OT1/cmr/m/n/10.95 events (72%$\OMS/cmsy/m/n/10.95 !$\OT1/cmr/m/n/10.95 0%) at 
+27% in-ter-ven-tion cost, demon-strat-ing theory-
+ []
+
+[4]
+Overfull \hbox (0.85533pt too wide) in paragraph at lines 111--112
+ \OT1/cmr/bx/n/10.95 PAC-Bayes and Information-Theoretic Gen-er-al-iza-tion.[] 
+\OT1/cmr/m/n/10.95 PAC-Bayes
+ []
+
+
+Overfull \hbox (7.00797pt too wide) in paragraph at lines 120--121
+\OT1/cmr/m/n/10.95 and Arm-strong, 2016], im-pact reg-u-lar-iza-tion [Turner et
+ al., 2019], and shielded
+ []
+
+[5] [6] [7]
+LaTeX Font Info:    Trying to load font information for U+euf on input line 229
+.
+(C:\Users\zwl62\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\ueuf.fd
+File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
+)
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/scit' undefined
+(Font)              using `OT1/cmr/m/sc' instead on input line 231.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/scit' undefined
+(Font)              using `OT1/cmr/m/sc' instead on input line 232.
+
+[8] [9] [10]
+Overfull \hbox (3.17542pt too wide) in paragraph at lines 352--353
+\OT1/cmr/m/n/10.95 Table 1[] sum-ma-rizes the de-cid-abil-ity bound-aries acros
+s dif-fer-ent pol-icy classes,
+ []
+
+
+Overfull \hbox (120.93533pt too wide) in paragraph at lines 358--369
+ [][] 
+ []
+
+[11] [12]
+Overfull \hbox (10.42302pt too wide) in paragraph at lines 409--410
+[]\OT1/cmr/bx/n/10.95 Stability/MI regime: \OT1/cmr/m/n/10.95 When $\OML/cmm/m/
+it/10.95 ^^U[] \OT1/cmr/m/n/10.95 = 0$, we re-cover $\OML/cmm/m/it/10.95 C\OT1/
+cmr/m/n/10.95 (\OML/cmm/m/it/10.95 Q[]\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 
+^^Y []\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 S\OT1/cmr/m/n/10.95 ; \OML/cmm/m/
+it/10.95 Q[]\OT1/cmr/m/n/10.95 )$,
+ []
+
+[13]
+Overfull \hbox (10.32231pt too wide) in paragraph at lines 465--466
+[]\OT1/cmr/bx/n/10.95 Corollary 5.6 \OT1/cmr/m/n/10.95 (Min-of-Bounds In-stan-t
+i-a-tion)\OT1/cmr/bx/n/10.95 . []\OT1/cmr/m/it/10.95 By choos-ing $\OT1/cmr/m/n
+/10.95 ^^C = \OMS/cmsy/m/n/10.95 f\OT1/cmr/m/n/10.95 (1\OML/cmm/m/it/10.95 ; \O
+T1/cmr/m/n/10.95 0)\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 (0\OML/cmm/m/it/10.
+95 ; \OT1/cmr/m/n/10.95 1)\OMS/cmsy/m/n/10.95 g$
+ []
+
+[14]
+Overfull \hbox (9.1997pt too wide) in paragraph at lines 494--496
+\OT1/cmr/m/it/10.95 where $[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 Q[]; D\OT1
+/cmr/m/n/10.95 )$ \OT1/cmr/m/it/10.95 is the data-dependent Lip-s-chitz con-sta
+nt from As-sump-tion 3.6[]. 
+ []
+
+[15]
+Overfull \hbox (83.51791pt too wide) in paragraph at lines 529--536
+ [][] 
+ []
+
+[16] [17] [18] [19] [20] [21]
+Overfull \hbox (147.3878pt too wide) detected at line 720
+\OMS/cmsy/m/n/10.95 B[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 Q[]\OT1/cmr/m/n/
+10.95 ) = [] [] + \OML/cmm/m/it/10.95 L^^Z;
+ []
+
+<jmlr_reproduction/frontier_plot_lipschitz.png, id=95, 722.7pt x 433.62pt>
+File: jmlr_reproduction/frontier_plot_lipschitz.png Graphic file (type png)
+<use jmlr_reproduction/frontier_plot_lipschitz.png>
+Package pdftex.def Info: jmlr_reproduction/frontier_plot_lipschitz.png  used on
+ input line 728.
+(pdftex.def)             Requested size: 270.0pt x 161.99838pt.
+
+Overfull \hbox (0.99237pt too wide) in paragraph at lines 746--754
+ [][] 
+ []
+
+
+Overfull \hbox (54.79813pt too wide) detected at line 763
+[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 Q[]\OT1/cmr/m/n/10.95 ) + [] + \OML/c
+mm/m/it/10.95 L^^Z;  []\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 Q[]\OT1/cmr/m/n/
+10.95 ) + [] + \OML/cmm/m/it/10.95 L^^Z
+ []
+
+[22]
+<jmlr_reproduction/frontier_plot_pacbayes.png, id=100, 722.7pt x 433.62pt>
+File: jmlr_reproduction/frontier_plot_pacbayes.png Graphic file (type png)
+<use jmlr_reproduction/frontier_plot_pacbayes.png>
+Package pdftex.def Info: jmlr_reproduction/frontier_plot_pacbayes.png  used on 
+input line 768.
+(pdftex.def)             Requested size: 270.0pt x 161.99838pt.
+[23 <./jmlr_reproduction/frontier_plot_lipschitz.png>]
+Underfull \vbox (badness 1924) has occurred while \output is active []
+
+[24] [25 <./jmlr_reproduction/frontier_plot_pacbayes.png>]
+Overfull \hbox (16.15437pt too wide) in paragraph at lines 824--825
+[]\OT1/cmr/bx/n/10.95 Gradient-Based Lo-cal Av-er-age\OT1/cmr/m/n/10.95 : $[] =
+ \U/msb/m/n/10.95 E[]\OT1/cmr/m/n/10.95 [\OMS/cmsy/m/n/10.95 kr[]\OML/cmm/m/it/
+10.95 `\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 f\OT1/cmr/m/n/10.95 (\OML/cmm/m/
+it/10.95 x\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; y\OT1/cmr/m/n/10.95 )\OMS/c
+msy/m/n/10.95 k[]\OT1/cmr/m/n/10.95 ]$,
+ []
+
+[26]
+Overfull \hbox (0.82843pt too wide) in paragraph at lines 829--830
+ \OT1/cmr/bx/n/10.95 Re-sults.[] \OT1/cmr/m/n/10.95 Ta-ble 5[] sum-ma-rizes Lip
+-s-chitz es-ti-mates for three ResNet-18 mod-
+ []
+
+[27]
+Overfull \hbox (113.66101pt too wide) in paragraph at lines 885--893
+ [][] 
+ []
+
+
+Overfull \hbox (1.1376pt too wide) in paragraph at lines 897--898
+\OT1/cmr/m/n/10.95 demon-strat-ing The-o-rem 4.5[]'s prac-ti-cal implication|fi
+nite-state shields
+ []
+
+[28] [29]
+
+! LaTeX Error: Command \AND already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.949 \begin{algorithmic}[1]
+                            
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[30]
+Overfull \hbox (9.8879pt too wide) in paragraph at lines 982--983
+[]\OT1/cmr/bx/n/10.95 Decidability Land-scape\OT1/cmr/m/n/10.95 : Be-yond prov-
+ing $^^F[]$-completeness for Turing-
+ []
+
+
+Overfull \hbox (48.31387pt too wide) in paragraph at lines 982--983
+\OT1/cmr/m/n/10.95 complete poli-cies (The-o-rem 4.2[]), we mapped the com-plet
+e phase diagram|finite-
+ []
+
+
+Overfull \hbox (13.60843pt too wide) in paragraph at lines 982--983
+\OT1/cmr/m/n/10.95 state con-trollers re-store de-cid-abil-ity (The-o-rem 4.5[]
+), with a sharp memory-
+ []
+
+[31]
+Overfull \hbox (10.93674pt too wide) in paragraph at lines 997--998
+\OT1/cmr/m/n/10.95 Con-jec-ture: B^^?uchi-recognizable prop-er-ties re-tain $^^
+F[]$-hardness for Turing-
+ []
+
+
+Overfull \hbox (26.44402pt too wide) in paragraph at lines 999--1000
+[]\OT1/cmr/bx/n/10.95 Multi-Agent and Game-Theoretic Set-tings\OT1/cmr/m/n/10.9
+5 : Ex-tend-ing the capability--
+ []
+
+
+Overfull \hbox (5.76276pt too wide) in paragraph at lines 1006--1007
+[]\OT1/cmr/bx/n/10.95 Automated Shield Syn-the-sis\OT1/cmr/m/n/10.95 : Cur-rent
+ LTL$\OMS/cmsy/m/n/10.95 !$\OT1/cmr/m/n/10.95 DFA$\OMS/cmsy/m/n/10.95 !$\OT1/cm
+r/m/n/10.95 Shield pipelines
+ []
+
+[32] (universal-catastrophic-safety-undecidability-capability-risk-frontier_en.
+bbl [33] [34])
+Overfull \hbox (4.88339pt too wide) in paragraph at lines 1039--1040
+\OT1/cmr/m/n/10.95 nou, 2020, Xu and Ra-gin-sky, 2017]. If $\OML/cmm/m/it/10.95
+ `$ \OT1/cmr/m/n/10.95 is $\OML/cmm/m/it/10.95 ^^[[]$\OT1/cmr/m/n/10.95 -sub-Ga
+ussian and $[](\OML/cmm/m/it/10.95 S\OT1/cmr/m/n/10.95 ; \OML/cmm/m/it/10.95 Q[
+]\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 ^^T
+ []
+
+
+LaTeX Warning: Reference `eq:unified_bound' on page 35 undefined on input line 
+1045.
+
+[35] [36] [37]
+Overfull \hbox (0.8018pt too wide) in paragraph at lines 1140--1141
+\OT1/cmr/m/n/10.95 For the Con-di-tional Mu-tual In-for-ma-tion (CMI) es-ti-ma-
+tor used in Sec-tion 7.2[],
+ []
+
+[38] [39] [40]
+Overfull \hbox (2.21613pt too wide) in paragraph at lines 1231--1232
+[]\OT1/cmr/m/n/10.95 The $[]$ term matches the complexity-dependent gen-er-al-i
+za-tion term
+ []
+
+[41] [42] (universal-catastrophic-safety-undecidability-capability-risk-frontie
+r_en.aux)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-04>
+ ***********
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 4851 strings out of 474486
+ 76594 string characters out of 5743754
+ 1938542 words of memory out of 5000000
+ 27057 multiletter control sequences out of 15000+600000
+ 574794 words of font info for 98 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 72i,13n,79p,1166b,400s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\zwl62\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
+1095.pk><C:/Users/zwl62/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmbx10.pfb><C:/Users/zwl62/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmbx12.pfb><C:/Users/zwl62/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/zwl62/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/zwl62/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/zwl62/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/zwl6
+2/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Us
+ers/zwl62/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pf
+b><C:/Users/zwl62/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmmi8.pfb><C:/Users/zwl62/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmr10.pfb><C:/Users/zwl62/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmr12.pfb><C:/Users/zwl62/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmr17.pfb><C:/Users/zwl62/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/zwl62/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/zwl62/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/zwl62/AppData/
+Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/zwl62/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/User
+s/zwl62/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb
+><C:/Users/zwl62/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
+msy10.pfb><C:/Users/zwl62/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmsy6.pfb><C:/Users/zwl62/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmsy8.pfb><C:/Users/zwl62/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmti10.pfb><C:/Users/zwl62/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/zwl62/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmti8.pfb><C:/Users/zwl62/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/zwl62/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Users
+/zwl62/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.p
+fb><C:/Users/zwl62/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/sy
+mbols/msbm10.pfb>
+Output written on universal-catastrophic-safety-undecidability-capability-risk-
+frontier_en.pdf (42 pages, 617948 bytes).
+PDF statistics:
+ 288 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -1,0 +1,59 @@
+[
+  {
+    "config": {
+      "model_name": "resnet18",
+      "width_factor": 0.5,
+      "lr": 0.1,
+      "weight_decay": 0.005,
+      "batch_size": 128,
+      "epochs": 1,
+      "device": "cuda",
+      "corruption_severity": 3,
+      "pac_delta": 0.001,
+      "prior_variance": 1.0
+    },
+    "clean_error": 0.7339,
+    "robust_error": 0.7407,
+    "L_est": 0.09173533798733173,
+    "pacbayes_bound": 0.8243410665844639,
+    "bound_plus_Lrho": 0.8381013672825637
+  },
+  {
+    "config": {
+      "model_name": "resnet18",
+      "width_factor": 1.0,
+      "lr": 0.1,
+      "weight_decay": 0.001,
+      "batch_size": 128,
+      "epochs": 1,
+      "device": "cuda",
+      "corruption_severity": 3,
+      "pac_delta": 0.001,
+      "prior_variance": 1.0
+    },
+    "clean_error": 0.627,
+    "robust_error": 0.5989,
+    "L_est": 456114090.29402834,
+    "pacbayes_bound": 1.0179434977436146,
+    "bound_plus_Lrho": 68417114.56204776
+  },
+  {
+    "config": {
+      "model_name": "resnet18",
+      "width_factor": 2.0,
+      "lr": 0.1,
+      "weight_decay": 0.0001,
+      "batch_size": 128,
+      "epochs": 1,
+      "device": "cuda",
+      "corruption_severity": 3,
+      "pac_delta": 0.001,
+      "prior_variance": 1.0
+    },
+    "clean_error": 0.6286,
+    "robust_error": 0.6377999999999999,
+    "L_est": 28023609189452.31,
+    "pacbayes_bound": 1.187362279708363,
+    "bound_plus_Lrho": 4203541378419.034
+  }
+]

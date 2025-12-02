@@ -1,0 +1,720 @@
+% Physical Review A submission using revtex4-2 document class
+\documentclass[aps,pra,twocolumn,superscriptaddress,showpacs,preprintnumbers,amsmath,amssymb]{revtex4-2}
+
+% Common packages
+\usepackage{graphicx}
+\usepackage{dcolumn}
+\usepackage{bm}
+\usepackage{hyperref}
+\usepackage{braket}
+
+\begin{document}
+
+\title{Information Rate Circle in Dirac Quantum Walks:\\A Geometric Route to Relativistic Kinematics}
+
+\author{Haobo Ma}
+\affiliation{Independent Researcher}
+\author{Wenlin Zhang}
+\affiliation{National University of Singapore}
+\email{e1327962@u.nus.edu}
+
+\date{\today}
+
+\begin{abstract}
+We identify an exact geometric conservation law for the single-particle sector of one-dimensional Dirac-type quantum cellular automata (QCA),
+\(v_{\mathrm{ext}}^2(p)+v_{\mathrm{int}}^2(p)=c^2\),
+where \(v_{\mathrm{ext}}\) is the group velocity, \(v_{\mathrm{int}}\) is an internal rate determined by the Bloch-axis geometry, and \(c\) is the Lieb-Robinson causal velocity. This ``information rate circle'' partitions the maximal causal information flow between spatial transport and internal quantum processing. We give \(v_{\mathrm{int}}\) an operational meaning by proving that it sets a rigorous upper bound on coin-position entanglement generation for narrow wave packets, thereby tying the geometric constraint directly to quantum-information resources. In the long-wavelength, narrow-wave-packet regime, interpreting \(v_{\mathrm{int}}/c\) as a proper-time rate \(\mathrm{d}\tau/\mathrm{d}t\) yields standard special-relativistic kinematics: time dilation, four-velocity normalization, and the energy-momentum relation \(E^2=p_{\mathrm{phys}}^2c^2+m^2c^4\) with \(m=\hbar\mu/c^2\). The information rate circle thus organizes relativistic kinematic structure as an emergent trade-off in discrete quantum information processing.
+\end{abstract}
+
+\keywords{Quantum walks, Quantum cellular automata, Relativistic quantum information, Entanglement dynamics, Lieb-Robinson bounds, Emergent spacetime}
+
+\maketitle
+
+\textit{Introduction.---}
+Spacetime geometry is usually treated as a smooth background in relativistic field theory, whereas quantum-information approaches view dynamics as local unitaries acting on finite-dimensional systems. Quantum cellular automata (QCA) provide a precise framework for this latter picture, with discrete time, bounded signal velocity, and continuum limits that reproduce free quantum field theories~\cite{dariano,bisio,brun,trezzini}.
+
+A key open issue is how Lorentz symmetry and the Minkowski metric emerge from such discrete, quantum-computational dynamics without an underlying continuum. Dirac equations are known to arise in QCA and quantum-walk models through long-wavelength expansions of the lattice dispersion~\cite{strauch,chandrashekar,mallick,dariano}, and Lieb--Robinson bounds characterize finite propagation speed in quantum lattices~\cite{lieb,nachtergaele}. What has been missing is a simple geometric principle that simultaneously organizes these structures and their relativistic interpretation on the finite lattice.
+
+In this work, we identify such a geometric organizing principle. Unlike previous works that derive relativistic behavior only after a continuum approximation, we exhibit an exact finite-lattice geometric identity that holds at all energy scales and for all momentum modes. For one-dimensional Dirac-type QCA, the single-step unitary evolution \(U(p)=e^{-i\Omega(p)\hat{n}(p)\cdot\vec{\sigma}}\) admits a natural decomposition of the Bloch axis \(\hat{n}(p)\) relative to a propagation direction \(\hat{d}\). Defining the external group velocity
+\(v_{\mathrm{ext}}(p):=c\,\hat{n}\cdot\hat{d}\)
+and the internal rate
+\(v_{\mathrm{int}}(p):=c\,|\hat{n}\times\hat{d}|\)
+(with \(c=a/\Delta t\) the lattice velocity scale), the unit-norm constraint \(|\hat{n}|^2=1\) immediately gives
+\begin{equation}
+v_{\mathrm{ext}}^2(p)+v_{\mathrm{int}}^2(p)=c^2.
+\label{eq:rate_circle}
+\end{equation}
+Mathematically, Eq.~(\ref{eq:rate_circle}) is simply the statement that \((\hat{n}\cdot\hat{d})^2+|\hat{n}\times\hat{d}|^2=1\) for any unit vector \(\hat{n}\). We refer to this relation as the \textbf{information rate circle} to emphasize its physical meaning: for our Dirac QCAs, \(c\) coincides with the Lieb-Robinson causal velocity (A2), so the identity partitions the total causal capacity between spatial propagation and internal processing.\footnote{The term ``information rate'' is used in this operational sense, to indicate that the lattice velocity scale \(c\) sets the total rate at which the system can update, split between external and internal degrees of freedom. It is not intended as Shannon information or channel capacity in the strict coding-theoretic sense. The physical content lies in the connections to the Lieb-Robinson velocity, to entanglement generation (Proposition 1), and to the ratio \(v_{\mathrm{int}}/c\approx mc^2/E\).}
+
+Remarkably, when one defines a proper-time parameter via \(\mathrm{d}\tau:=(v_{\mathrm{int}}/c)\,\mathrm{d}t\), the familiar relativistic relations---time dilation \(\gamma=\mathrm{d}t/\mathrm{d}\tau\), four-velocity normalization, and the energy-momentum relation \(E^2=p_{\mathrm{phys}}^2c^2+m^2c^4\) with \(m=\hbar\mu/c^2\)---are recovered in the long-wavelength, narrow-wave-packet limit. This does not constitute an independent derivation of special relativity. Instead, it shows that the known Dirac dispersion and relativistic energy-momentum relation can be geometrically organized as consequences of Eq.~(\ref{eq:rate_circle}) together with the SU(2) structure of the quantum walk.
+
+The physical significance of this geometric identity rests on two quantitative links to observables. 
+\begin{itemize}
+\item[(i)] \textit{Entanglement generation:} We prove that \(v_{\mathrm{int}}\) controls a rigorous one-step upper bound on coin-position entanglement growth for narrow wave packets (Proposition 1). This establishes \(v_{\mathrm{int}}\) as the physical scale governing quantum correlation generation, elevating the rate circle from a purely kinematic statement to a constraint on information-theoretic resources.
+\item[(ii)] \textit{Causal structure:} For the class of nearest-neighbor Dirac QCAs considered here, the lattice velocity \(c\) coincides with the Lieb-Robinson causal velocity \(v_{\mathrm{LR}}\) (A2), so the circle relation is a geometric decomposition of the light-cone speed into external and internal components.
+\end{itemize}
+Together, these results show that the ``information rate'' terminology is not merely metaphorical. The internal rate \(v_{\mathrm{int}}\) governs the rate of quantum information generation, while \(c\) sets the causal limit on both spatial propagation and internal processing.
+
+\section{Model and Axioms}
+
+\subsection{Discrete-Time Dirac Quantum Walk}
+
+We consider a discrete-time quantum walk on the one-dimensional lattice \(\Lambda = \mathbb{Z}\), with each site \(x\in\mathbb{Z}\) carrying a two-dimensional coin Hilbert space \(\mathcal{H}_x \cong \mathbb{C}^2\). The single-particle Hilbert space is \(\mathcal{H} = \ell^2(\mathbb{Z}) \otimes \mathbb{C}^2\), where \(\ell^2(\mathbb{Z})\) describes the position degree of freedom and \(\mathbb{C}^2\) describes an internal spin-like degree of freedom.
+
+Time evolution proceeds in discrete steps of duration \(\Delta t\), generated by a unitary operator \(U\) acting on \(\mathcal{H}\). We impose three structural axioms on this quantum walk.
+
+\textbf{A1 (Discrete-unitary-local).}
+The evolution is given by a quasilocal unitary operator \(U\) acting on finite-dimensional cells with bounded interaction range.
+
+\textbf{A2 (Finite light cone).}
+A Lieb--Robinson bound holds: for local operators \(A,B\) separated by distance \(d\),
+\begin{equation}
+\|[\alpha_t(A),B]\| \le C \|A\|\,\|B\|\, e^{-\mu(d - v_{\mathrm{LR}}|t|)},
+\end{equation}
+where \(\alpha_t(A) = U^t A U^{-t}\) and \(v_{\mathrm{LR}}>0\) is the Lieb-Robinson velocity~\cite{lieb,nachtergaele}. For the nearest-neighbor, translation-invariant Dirac-type QCAs defined below (A3), the Lieb-Robinson velocity \(v_{\mathrm{LR}}\) coincides with the single-particle massless group velocity \(c = a/\Delta t\). This follows because (i) the Lieb-Robinson bound for nearest-neighbor unitary circuits gives \(v_{\mathrm{LR}} = \mathcal{O}(a/\Delta t)\)~\cite{nachtergaele}, and (ii) the massless mode \((\mu=0)\) saturates \(|v_{\mathrm{ext}}| = c\) according to the dispersion relation. Throughout this work we use \(c\) to denote this common velocity scale.
+
+\textbf{A3 (Dirac effective mode).}
+The low-energy sector contains a translation-invariant mode with a two-component internal structure whose single-step update operator in momentum representation is
+\begin{equation}
+U(p) = C(\mu)\,T(p) = e^{-i\mu\Delta t\,\hat{m}\cdot\vec{\sigma}} e^{-ipa\,\hat{d}\cdot\vec{\sigma}},
+\label{eq:update}
+\end{equation}
+where \(a\) is the lattice spacing, \(\Delta t\) is the time step, \(\mu\) is a microscopic frequency (with dimensions of inverse time), \(p\) is the lattice wave number (inverse length), \(\vec{\sigma} = (\sigma_x,\sigma_y,\sigma_z)\) is the vector of Pauli matrices, and \(\hat{m}, \hat{d} \in S^2\) are fixed unit vectors satisfying \(\hat{m}\cdot\hat{d}=0\). Here \(\hat{d}\) specifies the propagation-direction operator and \(\hat{m}\) specifies the mass-operator direction. The orthogonality condition \(\hat{m}\perp\hat{d}\) enforces a Dirac-type anticommutation structure analogous to the continuum Dirac Hamiltonian \(\mu\sigma_x + cp\sigma_z\). Throughout we take \(c = a/\Delta t\) as the natural velocity scale of the QCA (saturated by massless modes), and we keep \(c\) explicit in all expressions.
+
+\textit{Basis-independent formulation.---}
+For any orthogonal pair \((\hat{m},\hat{d})\), there exists a global SU(2) transformation \(W\) such that \(W(\hat{m}\cdot\vec{\sigma})W^\dagger = \sigma_x\) and \(W(\hat{d}\cdot\vec{\sigma})W^\dagger = \sigma_z\). Thus Eq.~(\ref{eq:update}) encompasses all Dirac-type quantum walks related by coin-space rotations. The standard choice \(\hat{m}=(1,0,0)\), \(\hat{d}=(0,0,1)\) recovers the familiar form \(U(p) = e^{-i\mu\Delta t\sigma_x} e^{-ipa\sigma_z}\)~\cite{strauch,chandrashekar}. This assumption singles out the standard class of translation-invariant two-component Dirac quantum walks, which captures the low-energy sector of several QCA constructions but does not exhaust all possible Dirac-type QCAs.
+
+\textit{Dispersion relation and Bloch structure.---}
+The update operator~(\ref{eq:update}) is an element of SU(2) and can be written in Bloch form as
+\begin{equation}
+U(p) = e^{-i\Omega(p)\,\hat{n}(p)\cdot\vec{\sigma}},
+\end{equation}
+where \(\Omega(p) \in [0,\pi]\) is the characteristic angle and \(\hat{n}(p) \in S^2\) is a Bloch unit vector.
+
+Using the SU(2) multiplication formula~\cite{sakurai}
+\begin{equation}
+e^{-i\alpha\,\hat{a}\cdot\vec{\sigma}} e^{-i\beta\,\hat{b}\cdot\vec{\sigma}} = e^{-i\gamma\,\hat{c}\cdot\vec{\sigma}},
+\end{equation}
+with
+\begin{equation}
+\cos\gamma = \cos\alpha\cos\beta - (\hat{a}\cdot\hat{b})\sin\alpha\sin\beta,
+\end{equation}
+and taking \(\alpha = \mu\Delta t\), \(\beta = pa\), \(\hat{a} = \hat{m}\), \(\hat{b} = \hat{d}\) with \(\hat{m}\cdot\hat{d}=0\), we obtain the following result.
+
+\textbf{Theorem 1 (Dirac-QCA dispersion).}
+For the one-dimensional Dirac quantum walk defined in Eq.~(\ref{eq:update}), the characteristic angle \(\Omega(p)\) satisfies
+\begin{equation}
+\cos\bigl(\Omega(p)\bigr) = \cos(\mu\Delta t)\cos(pa).
+\label{eq:dispersion}
+\end{equation}
+The Bloch axis obeys
+\begin{equation}
+\hat{n}(p)\sin\Omega(p) = \hat{m}\sin(\mu\Delta t)\cos(pa) + \hat{d}\sin(pa)\cos(\mu\Delta t) - (\hat{m}\times\hat{d})\sin(\mu\Delta t)\sin(pa).
+\label{eq:bloch_vector}
+\end{equation}
+
+\textit{Natural orthogonal frame.---}
+To extract component expressions, we introduce the right-handed orthonormal basis
+\begin{equation}
+\hat{e}_1 := \hat{m}, \quad \hat{e}_2 := -\hat{m}\times\hat{d}, \quad \hat{e}_3 := \hat{d}.
+\label{eq:natural_basis}
+\end{equation}
+This basis has a clear physical meaning: \(\hat{e}_1\) is the mass-operator direction, \(\hat{e}_3\) is the propagation direction, and \(\hat{e}_2\) is orthogonal to both, forming the ``mass plane'' \(\mathcal{P} := \mathrm{span}\{\hat{e}_1, \hat{e}_2\}\). Writing \(\hat{n}(p) = \sum_{j=1}^3 n_j(p)\,\hat{e}_j\), Eq.~(\ref{eq:bloch_vector}) yields
+\begin{align}
+n_1(p) &= \frac{\sin(\mu\Delta t)\cos(pa)}{\sin\Omega(p)}, \label{eq:n1}\\
+n_2(p) &= \frac{\sin(\mu\Delta t)\sin(pa)}{\sin\Omega(p)}, \label{eq:n2}\\
+n_3(p) &= \frac{\cos(\mu\Delta t)\sin(pa)}{\sin\Omega(p)}. \label{eq:n3}
+\end{align}
+In what follows we restrict attention to the branch of \(\Omega(p)\) that is continuous at \(p=0\) and satisfies \(\Omega(0) \approx \mu\Delta t\), corresponding to the low-energy Dirac sector.
+
+\textit{Information rate circle.---}
+Define the angular frequency \(\omega(p) := \Omega(p)/\Delta t\). The \textbf{external group velocity} is
+\begin{equation}
+v_{\mathrm{ext}}(p) := \frac{\mathrm{d}\omega}{\mathrm{d}p}.
+\label{eq:vext}
+\end{equation}
+Differentiating the dispersion relation~(\ref{eq:dispersion}) with respect to \(p\) gives
+\begin{equation}
+-\sin\Omega\,\frac{\mathrm{d}\Omega}{\mathrm{d}p} = -\cos(\mu\Delta t)\sin(pa)\,a,
+\end{equation}
+so that
+\begin{equation}
+v_{\mathrm{ext}}(p) = \frac{a}{\Delta t}\,\frac{\cos(\mu\Delta t)\sin(pa)}{\sin\Omega(p)} = c\,n_3(p) = c\,\hat{n}(p)\cdot\hat{d},
+\label{eq:vext_geometric}
+\end{equation}
+where we used Eq.~(\ref{eq:n3}), \(c = a/\Delta t\), and \(\hat{d} = \hat{e}_3\). Thus the external velocity is the projection of the Bloch axis onto the propagation direction \(\hat{d}\) and can be expressed in a completely basis-independent way.
+
+We now introduce the complementary \textbf{internal rate}. In the natural frame,
+\begin{equation}
+\hat{n}(p)\times\hat{d} = (n_1\hat{e}_1 + n_2\hat{e}_2 + n_3\hat{e}_3)\times\hat{e}_3 = n_1(\hat{e}_1\times\hat{e}_3) + n_2(\hat{e}_2\times\hat{e}_3).
+\end{equation}
+Using the right-handed basis relations \(\hat{e}_1\times\hat{e}_3 = -\hat{e}_2\) and \(\hat{e}_2\times\hat{e}_3 = \hat{e}_1\), we obtain
+\begin{equation}
+\hat{n}(p)\times\hat{d} = -n_1\hat{e}_2 + n_2\hat{e}_1, \quad \Rightarrow \quad |\hat{n}(p)\times\hat{d}| = \sqrt{n_1^2 + n_2^2}.
+\end{equation}
+We define the internal rate as
+\begin{equation}
+v_{\mathrm{int}}(p) := c\,|\hat{n}(p)\times\hat{d}| = c\,\frac{\sin(\mu\Delta t)}{\sin\Omega(p)},
+\label{eq:vint}
+\end{equation}
+where the last equality follows from Eqs.~(\ref{eq:n1}) and~(\ref{eq:n2}). This is a basis-independent geometric quantity: the magnitude of \(\hat{n}\times\hat{d}\) measures the component of the Bloch axis in the plane perpendicular to the propagation direction.
+
+\textit{Clarification.---}
+The quantity \(v_{\mathrm{int}}(p)\) is a geometric object constructed from the generator \(U(p)\), not the instantaneous precession speed of a particular prepared coin state. The cross product \(\hat{n}\times\hat{d}\) measures the component of the Bloch axis perpendicular to the propagation direction, that is, the projection into the mass plane. In the continuum limit, we show below that \(v_{\mathrm{int}}/c\) coincides with \(\mathrm{d}\tau/\mathrm{d}t\), the standard ratio of rest energy to total energy for a relativistic particle.
+
+\textbf{Theorem 2 (Information rate circle, basis-independent).}
+For any Dirac-type quantum walk satisfying A1--A3 with \(\hat{m}\cdot\hat{d}=0\), the Bloch axis \(\hat{n}(p)\) and propagation direction \(\hat{d}\) satisfy
+\begin{equation}
+\frac{v_{\mathrm{ext}}(p)}{c} = \hat{n}(p)\cdot\hat{d}, \qquad \frac{v_{\mathrm{int}}(p)}{c} = |\hat{n}(p)\times\hat{d}|,
+\label{eq:vext_vint_geometric}
+\end{equation}
+and the external and internal rates obey the exact identity
+\begin{equation}
+v_{\mathrm{ext}}^2(p) + v_{\mathrm{int}}^2(p) = c^2
+\label{eq:circle}
+\end{equation}
+for all momentum modes \(p \in [-\pi/a, \pi/a]\) with \(\sin\Omega(p) \neq 0\). The relation extends by continuity to the isolated points where \(\sin\Omega(p)=0\).
+
+\textit{Proof.---}
+The geometric definitions~(\ref{eq:vext_geometric}) and~(\ref{eq:vint}) directly yield Eq.~(\ref{eq:vext_vint_geometric}). For any unit vector \(\hat{n}\) and any fixed direction \(\hat{d}\), the decomposition
+\begin{equation}
+\hat{n} = (\hat{n}\cdot\hat{d})\hat{d} + \bigl[\hat{n} - (\hat{n}\cdot\hat{d})\hat{d}\bigr]
+\end{equation}
+splits \(\hat{n}\) into components parallel and perpendicular to \(\hat{d}\). Taking the squared norm and using the vector identity \(|\hat{n}\times\hat{d}|^2 = |\hat{n}|^2|\hat{d}|^2 - (\hat{n}\cdot\hat{d})^2\), we obtain
+\begin{equation}
+(\hat{n}\cdot\hat{d})^2 + |\hat{n}\times\hat{d}|^2 = 1.
+\end{equation}
+Multiplying by \(c^2\) gives Eq.~(\ref{eq:circle}). \(\square\)
+
+\textit{Universality and geometric interpretation.---}
+Theorem 2 is completely basis-independent. The dot product \(\hat{n}\cdot\hat{d}\) and the magnitude \(|\hat{n}\times\hat{d}|\) are geometric invariants, independent of any particular coordinate choice or Pauli-matrix representation. The information rate circle is a direct consequence of the SU(2) structure: the Bloch axis \(\hat{n}(p)\) lies on the unit sphere, and its decomposition relative to \(\hat{d}\) uniquely determines the split between external and internal rates. This holds for any orthogonal pair \((\hat{m},\hat{d})\), and thus for all Dirac-type QCAs related by global coin-space rotations.
+
+The identity reveals a simple but strong constraint. The total information update rate \(c\) of the QCA is conserved across momentum modes but redistributed between external propagation and internal processing.
+
+\textit{Operational interpretation of the budget \(c\).---}
+The constant \(c\) on the right-hand side of Eq.~(\ref{eq:circle}) is not just a lattice parameter. For the nearest-neighbor unitary evolutions considered here, \(c = a/\Delta t\) coincides with the Lieb-Robinson velocity \(v_{\mathrm{LR}}\) (see A2), that is, with the fundamental causal speed. The rate-circle identity then says that the total causal capacity of the local interaction is conserved but dynamically allocated. Strictly massless modes use the full capacity for signal transmission \(v_{\mathrm{ext}} = v_{\mathrm{LR}},\, v_{\mathrm{int}} = 0\), whereas massive modes divert part of this capacity \(v_{\mathrm{int}} > 0\) into internal coin-space dynamics, which manifests as rest mass and entanglement generation (Sec.~III B). This dual role of \(c\) as both lattice velocity and causal limit underlies the ``information rate circle'' terminology.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.95\columnwidth]{figure_geometric_circle.pdf}
+\caption{Geometric visualization of the information rate circle. (a) The conservation law \(v_{\mathrm{ext}}^2 + v_{\mathrm{int}}^2 = c^2\) constrains all momentum modes to lie on a circle of radius \(c\) (the Lieb-Robinson velocity). Example modes are shown: rest frame (blue, \(p=0\), maximal \(v_{\mathrm{int}}\)), a generic massive mode (red), and a massless mode (black, on the horizontal axis with \(v_{\mathrm{int}}=0\)). (b) Bloch-sphere representation. The Bloch axis \(\hat{n}(p)\) (purple) decomposes relative to the propagation direction \(\hat{d}\) (green) into a component parallel to \(\hat{d}\) (proportional to \(v_{\mathrm{ext}}\), blue dashed) and a perpendicular component (proportional to \(v_{\mathrm{int}}\), red dashed). The unit-norm constraint \(|\hat{n}|=1\) enforces the circle relation.}
+\label{fig:circle}
+\end{figure}
+
+\textit{Emergence of special relativity.---}
+Given the rate circle~(\ref{eq:circle}), it is natural to parametrize worldlines by a time variable whose rate is controlled by the internal fraction \(v_{\mathrm{int}}/c\). For each momentum mode we define
+\begin{equation}
+\mathrm{d}\tau := \frac{v_{\mathrm{int}}}{c}\,\mathrm{d}t,
+\label{eq:proper_time}
+\end{equation}
+where \(v_{\mathrm{int}}(p)\) is evaluated at a fixed momentum \(p\).\footnote{This definition is meaningful for narrow wave packets localized around a central momentum \(p_0\) in the long-wavelength regime \(p_0 a, \mu\Delta t \ll 1\), where \(v_{\mathrm{int}}(p)\) can be treated as approximately constant over the wave-packet support. For broad or multimode superpositions, \(\tau\) becomes mode-dependent and the quasi-classical interpretation breaks down. Proposition 1 characterizes the narrow-wave-packet regime where this parametrization is self-consistent.} Interpreting \(v := v_{\mathrm{ext}}(p)\) as the physical velocity in the continuum limit and using \(v_{\mathrm{int}} = \sqrt{c^2 - v^2}\) from Eq.~(\ref{eq:circle}), we obtain
+\begin{equation}
+\frac{\mathrm{d}\tau}{\mathrm{d}t} = \frac{v_{\mathrm{int}}}{c} = \sqrt{1-\frac{v^2}{c^2}}.
+\end{equation}
+This reproduces the standard Lorentz time-dilation formula. The parameter \(\tau\) can thus be identified with Minkowski proper time along the trajectory of the wave-packet center, and the Lorentz factor is
+\begin{equation}
+\gamma = \frac{\mathrm{d}t}{\mathrm{d}\tau} = \frac{1}{\sqrt{1-v^2/c^2}}.
+\end{equation}
+
+The four-velocity is defined as
+\begin{equation}
+u^\mu := \frac{\mathrm{d}x^\mu}{\mathrm{d}\tau}, \quad x^0 = ct, \; x^1 = x.
+\end{equation}
+Thus
+\begin{equation}
+u^0 = \gamma c, \quad u^1 = \gamma v.
+\end{equation}
+Under the Minkowski metric \(g_{\mu\nu} = \mathrm{diag}(-1,+1)\),
+\begin{equation}
+g_{\mu\nu}u^\mu u^\nu = -\gamma^2 c^2 + \gamma^2 v^2 = -\gamma^2(c^2-v^2) = -c^2,
+\end{equation}
+which is the standard four-velocity normalization.
+
+\textit{Connection to relativistic energy ratio.---}
+The internal rate \(v_{\mathrm{int}}/c\) can be expressed directly in terms of the relativistic energy ratio. In the low-energy regime \(\mu\Delta t, pa \ll 1\), a Taylor expansion of the dispersion relation~(\ref{eq:dispersion}) yields the Dirac dispersion \(\omega^2(p) \approx \mu^2 + p^2 c^2\) (see Appendix A for details). From the definition~(\ref{eq:vint}),
+\begin{equation}
+\frac{v_{\mathrm{int}}(p)}{c} \approx \frac{\mu}{\omega(p)}.
+\label{eq:vint_over_omega}
+\end{equation}
+Defining the physical mass by \(mc^2 := \hbar\mu\) and the physical energy \(E(p) := \hbar\omega(p)\), this becomes
+\begin{equation}
+\frac{v_{\mathrm{int}}(p)}{c} \approx \frac{mc^2}{E(p)},
+\end{equation}
+which is precisely the ratio of rest energy to total energy. With physical momentum \(p_{\mathrm{phys}} = \hbar p\), the Dirac dispersion gives the relativistic energy-momentum relation \(E^2(p) \approx p_{\mathrm{phys}}^2 c^2 + m^2c^4\). In special relativity, \(\mathrm{d}\tau/\mathrm{d}t = mc^2/E\), so this matches our definition~(\ref{eq:proper_time}) and shows that four-velocity normalization and time dilation follow from the geometric constraint Eq.~(\ref{eq:rate_circle}). The information rate circle therefore provides a compact geometric organization of relativistic kinematics within the Dirac quantum walk, rather than a new derivation of special relativity.
+
+\subsection{One-step entanglement bound and operational meaning of \(v_{\mathrm{int}}\)}
+
+The information rate circle Eq.~(\ref{eq:rate_circle}) would remain a purely kinematic identity unless \(v_{\mathrm{int}}\) was linked to a concrete physical observable. \textbf{The following result establishes such a link}: the internal rate \(v_{\mathrm{int}}(p)\) directly controls the rate of quantum correlation generation between coin and position degrees of freedom, thus connecting the geometric constraint to an experimentally accessible quantum-information resource.
+
+We consider the linear entropy \(S_{\mathrm{lin}} := 1 - \mathrm{Tr}\,\rho_c^2\) of the reduced coin density matrix, which for a global pure state quantifies the entanglement between coin and position. Proposition 1 shows that \(v_{\mathrm{int}}\) sets the dominant physical scale governing entanglement growth after a single time step.
+
+\textbf{Proposition 1 (One-step narrow-wave-packet entanglement bound).}
+Consider a Dirac-type quantum walk satisfying A1--A3 and an initial product state
+\begin{equation}
+\ket{\Psi_0} = \int \mathrm{d}p\, f(p)\,\ket{p}\otimes\ket{\chi},
+\end{equation}
+where \(f(p)\) is normalized, has variance \(\sigma_p^2\), and is sharply peaked around \(p_0\) with \(\sigma_p a \ll 1\). In the low-energy regime \(\mu\Delta t,\,p_0 a\ll 1\), the coin-position linear entropy after one step satisfies
+\begin{equation}
+S_{\mathrm{lin}}(1)
+\;\le\;
+2\,\sigma_p^2\,\Delta t^2\,
+\Bigl[v_{\mathrm{ext}}^2(p_0)
++ \kappa\,v_{\mathrm{int}}^2(p_0)\Bigr]
+\;+\; \mathcal{O}(\sigma_p^3),
+\label{eq:entanglement_bound}
+\end{equation}
+where \(\kappa = \mathcal{O}(1)\) is a dimensionless constant depending only on the energy regime. In particular, for modes with small group velocity \(|v_{\mathrm{ext}}(p_0)|\ll c\), the entanglement produced per step is controlled by the internal rate, \(S_{\mathrm{lin}}(1) \lesssim \sigma_p^2\Delta t^2 v_{\mathrm{int}}^2(p_0)\), up to order-one factors.
+
+\textit{Proof.---}
+The evolved state after one step is \(\ket{\Psi_1} = \int \mathrm{d}p\, f(p)\,U(p)\ket{\chi}\otimes\ket{p}\). Tracing out position gives the reduced coin state
+\begin{equation}
+\rho_c(1) = \int \mathrm{d}p\, |f(p)|^2\,U(p)\ket{\chi}\bra{\chi}U^\dagger(p),
+\end{equation}
+with linear entropy
+\begin{equation}
+S_{\mathrm{lin}}(1) = 1 - \iint \mathrm{d}p\,\mathrm{d}p'\,|f(p)|^2|f(p')|^2\,\bigl|\braket{\chi|U^\dagger(p)U(p')|\chi}\bigr|^2.
+\end{equation}
+For narrow wave packets with \(|p-p'| \lesssim \sigma_p\), we expand \(U^\dagger(p)U(p') = \exp[-i(p'-p)\,\partial_p K(p_0)] + \mathcal{O}((p'-p)^2)\), where \(K(p) := \Omega(p)\hat{n}(p)\cdot\vec{\sigma}\). For any Hermitian \(2\times 2\) matrix \(G = \|\partial_p K\|\,\hat{u}\cdot\vec{\sigma}\) (with \(\hat{u}\) a unit vector), the overlap obeys \(1 - |\braket{\chi|e^{-i\delta G}|\chi}|^2 \le \sin^2(\delta\|\partial_p K\|) \le \delta^2\|\partial_p K\|^2\). Integrating over the product measure \(|f(p)|^2|f(p')|^2\) and using \(\mathbb{E}[(p'-p)^2] = 2\sigma_p^2\) for independent identically distributed \(p,p'\) gives
+\begin{equation}
+S_{\mathrm{lin}}(1) \le 2\sigma_p^2\,\|\partial_p K(p_0)\|^2 + \mathcal{O}(\sigma_p^3).
+\end{equation}
+Computing \(\partial_p K = (\partial_p\Omega)\hat{n}\cdot\vec{\sigma} + \Omega\,\partial_p\hat{n}\cdot\vec{\sigma}\), we find \(\|\partial_p K\|^2 = (\partial_p\Omega)^2 + \Omega^2|\partial_p\hat{n}|^2\), with \(\hat{n}\cdot\partial_p\hat{n} = 0\) by the unit-norm constraint. In the low-energy regime, \(\partial_p\Omega = v_{\mathrm{ext}}\Delta t\) and \(\Omega^2|\partial_p\hat{n}|^2 \le \kappa\,\Delta t^2 v_{\mathrm{int}}^2\) (see Appendix C for the detailed estimate), which gives Eq.~(\ref{eq:entanglement_bound}). \(\square\)
+
+\textit{Physical interpretation.---}
+The bound~(\ref{eq:entanglement_bound}) shows that one-step entanglement generation is controlled by \(\partial_p K\), the momentum derivative of the generator. This derivative splits into two contributions. 
+\begin{itemize}
+\item[(i)] The term proportional to \(v_{\mathrm{ext}}^2\) arises from dispersion \((\partial_p\Omega)\), which causes the wave packet to spread and different momentum components to accumulate different phases, leading to momentum-dependent coin evolution.
+\item[(ii)] The term proportional to \(v_{\mathrm{int}}^2\) arises from Bloch-axis twisting \((\partial_p\hat{n})\), which encodes how the coin-rotation axis varies across the wave packet, so that different momentum components undergo different coin rotations even at fixed time.
+\end{itemize}
+The internal rate \(v_{\mathrm{int}}\) controls the second mechanism, that is, the rate at which the internal structure of the generator varies with momentum. This provides a quantitative link between the geometric decomposition Eq.~(\ref{eq:rate_circle}) and a rigorously bounded entanglement measure that is, at least in principle, experimentally accessible.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.95\columnwidth]{figure_dispersion_and_rates.pdf}
+\caption{Dispersion relation, velocity decomposition, and entanglement bound. (a) Dispersion relation \(\Omega(p)\) for different mass parameters \(\mu\Delta t\). The massless case (\(\mu\Delta t=0\), black) exhibits linear dispersion, while massive modes (blue, red) show the characteristic gap opening at \(p=0\). (b) Velocity partition for an intermediate mass \((\mu\Delta t=0.5)\): external group velocity \(v_{\mathrm{ext}}\) (blue solid), internal rate \(v_{\mathrm{int}}\) (red dashed), and their Pythagorean sum (black dotted, equal to \(c\)). (c) Entanglement-generation proxy \(v_{\mathrm{int}}^2/c^2\) from Proposition 1. The massless mode (black) generates no coin-position entanglement, whereas massive modes exhibit peak entanglement near \(p=0\) (rest frame), making the operational significance of \(v_{\mathrm{int}}\) manifest.}
+\label{fig:dispersion}
+\end{figure}
+
+\textit{Mass and relativistic dispersion.---}
+In the rest frame \(p=0\), the dispersion relation~(\ref{eq:dispersion}) gives \(\omega(0) \approx \mu\) for \(\mu\Delta t \ll 1\). We define the physical rest mass \(m\) by \(E_0 := \hbar\omega(0) = mc^2\), so that \(m = \hbar\mu/c^2\). A low-energy Taylor expansion (Appendix A) gives \(\omega^2(p) \approx \mu^2 + p^2 c^2\). With physical momentum \(p_{\mathrm{phys}} = \hbar p\), this yields the relativistic energy-momentum relation
+\begin{equation}
+E^2(p) \approx p_{\mathrm{phys}}^2 c^2 + m^2c^4.
+\label{eq:energy_momentum}
+\end{equation}
+Higher-order corrections in \(\mu\Delta t\) and \(pa\) encode lattice effects that break continuous Lorentz symmetry at high energies.
+
+This is the usual relativistic energy-momentum relation, derived here from the QCA dispersion structure together with the identification of mass as an internal evolution rate.
+
+\textit{Physical interpretation.---}
+The information rate circle provides a geometric reinterpretation of relativistic phenomena within this Dirac QW model.
+
+\textbf{Inertia.}
+Mass resists acceleration because increasing external velocity requires decreasing the internal rate (to preserve \(v_{\mathrm{ext}}^2 + v_{\mathrm{int}}^2 = c^2\)), which in turn requires energy input proportional to the internal frequency \(\mu\), or equivalently to the physical mass \(m = \hbar\mu/c^2\).
+
+\textbf{Time dilation.}
+Moving particles age more slowly because their internal evolution rate \(v_{\mathrm{int}} = c\sqrt{1-v^2/c^2}\) decreases with external velocity \(v\), directly defining proper time as in Eq.~(\ref{eq:proper_time}).
+
+\textbf{Light-speed limit.}
+Massless modes \((\mu=0)\) have \(v_{\mathrm{int}}=0\) and \(v_{\mathrm{ext}}=c\), allocating the full geometric rate \(c\) to external propagation. Massive modes must have a nonzero internal component, which enforces \(v_{\mathrm{ext}} < c\).
+
+\textbf{\(E=mc^2\).}
+Rest energy can be understood as internal oscillation energy in the frame where external propagation vanishes.
+
+\subsection{Massless limit and lightlike modes}
+
+The information rate circle provides a unified treatment of massive and massless Dirac modes. For \(\mu=0\), the coin rotation vanishes and the dispersion relation~(\ref{eq:dispersion}) reduces to
+\begin{equation}
+\cos\Omega(p) = \cos(pa).
+\end{equation}
+At small momentum \(pa \ll 1\), this gives \(\Omega(p) \approx pa\), so \(\omega(p) = \Omega/\Delta t \approx pa/\Delta t\), that is, a linear dispersion \(E = \hbar\omega \approx \hbar cp\) (with \(p_{\mathrm{phys}} = \hbar p\)) characteristic of massless particles.
+
+From Eq.~(\ref{eq:vint}),
+\begin{equation}
+v_{\mathrm{int}}(p) = c\,\frac{\sin(\mu\Delta t)}{\sin\Omega(p)} = 0
+\end{equation}
+for \(\mu=0\), while Eq.~(\ref{eq:vext}) gives \(v_{\mathrm{ext}}(p) = c\,\cos(\mu\Delta t)\sin(pa)/\sin\Omega(p) = c\,\mathrm{sgn}[\sin(pa)]\). Thus \(|v_{\mathrm{ext}}|=c\) and \(v_{\mathrm{int}}=0\) for massless modes, and the rate circle allocates the entire budget \(c\) to the group velocity, consistent with the kinematic property that null trajectories have vanishing proper time.
+
+\textit{Clarification on internal dynamics.---}
+It is important to stress that \(v_{\mathrm{int}}=0\) does not mean that the coin degree of freedom is frozen. For \(\mu=0\), the generator \(U(p) = e^{-ipa\hat{d}\cdot\vec{\sigma}}\) still induces nontrivial coin evolution for generic initial states. For instance, a superposition of eigenstates of \(\hat{d}\cdot\vec{\sigma}\) will undergo Rabi oscillations with frequency proportional to \(pa\). The statement \(v_{\mathrm{int}}=0\) is geometric. It says that the Bloch axis \(\hat{n}(p)\) is aligned with the propagation direction \(\hat{d}\), leaving no component in the mass plane orthogonal to \(\hat{d}\). This alignment allows the full update budget \(c\) to be devoted to external propagation.
+
+Conversely, for massive modes \((\mu \neq 0)\), the requirement \(v_{\mathrm{int}} > 0\) forces \(v_{\mathrm{ext}} < c\), giving a geometric reason why particles with rest mass cannot reach light speed. The generator axis \(\hat{n}(p)\) must have a nonzero component perpendicular to the propagation direction \(\hat{d}\), which limits the group velocity.
+
+\subsection{Experimental signatures and parameter estimates}
+
+The information rate circle predicts observable signatures in quantum-simulation platforms where Dirac-type QCA can be implemented~\cite{alderete,kumar}.
+
+\textbf{Protocol 1: Verification via process tomography.}
+Since \(v_{\mathrm{int}}(p)\) is defined from the generator \(U(p)\) rather than from time-evolved states, a natural experimental procedure is:
+\begin{itemize}
+\item[(i)] Use quantum process tomography~\cite{alderete} to reconstruct the single-step unitary \(U(p_0)\) at a chosen momentum \(p_0\). This requires applying \(U\) to a complete set of input states and performing state tomography on the outputs.
+\item[(ii)] From the reconstructed \(U(p_0)\), extract the SU(2) parameters \(\Omega(p_0)\) and the Bloch axis \(\hat{n}(p_0)\) by diagonalization or fitting.
+\item[(iii)] With the known propagation direction \(\hat{d}\) from the experimental design, compute \(v_{\mathrm{int}}(p_0) = c\,|\hat{n}(p_0)\times\hat{d}|\) from the geometric formula.
+\item[(iv)] Independently measure the group velocity \(v_{\mathrm{ext}}(p_0)\) by preparing a wave packet localized around \(p_0\) and tracking its center-of-mass motion, \(v_{\mathrm{ext}} \approx \Delta\langle x \rangle / \Delta t\).
+\item[(v)] Verify \(v_{\mathrm{ext}}^2(p_0) + v_{\mathrm{int}}^2(p_0) = c^2\) within experimental error.
+\end{itemize}
+
+Process tomography is resource-intensive, but for two-level coins it is feasible with current trapped-ion~\cite{alderete} and superconducting-circuit platforms. Alternatively, if the update operator is known from the experimental design, one can compute \(v_{\mathrm{int}}\) from the programmed coin angle \(\mu\Delta t\) and verify the circle relation using only the measured group velocity.
+
+As a concrete estimate, consider trapped ions with site spacing \(a \sim 5\,\mu\mathrm{m}\) and time step \(\Delta t \sim 10\,\mu\mathrm{s}\), giving a maximal velocity scale \(c = a/\Delta t \sim 0.5\) m/s. A coin angle \(\mu\Delta t \sim 0.1\) rad corresponds to \(\mu \sim 10^4\) s\(^{-1}\), and hence to an effective mass \(m = \hbar\mu/c^2 \sim 10^{-30}\) kg (about \(6\) eV/\(c^2\)). At lattice momentum \(p \sim 0.1/a \sim 2\times10^4\) m\(^{-1}\), both \(v_{\mathrm{ext}}\) and \(v_{\mathrm{int}}\) are of order \(\sim 0.3\) m/s, well within experimental resolution.
+
+\textbf{Protocol 2: Mass from internal frequency.}
+The relation \(m = \hbar\mu/c^2\) can be tested by:
+\begin{itemize}
+\item[(i)] Varying the coin rotation angle \(\mu\Delta t\) over a range (for example, \(0.05\) to \(0.3\) rad).
+\item[(ii)] For each \(\mu\), measuring the rest-frame oscillation frequency \(\omega(0)\) via spectroscopy of the Floquet quasi-energy.
+\item[(iii)] Verifying that \(\omega(0) \approx \mu\) in the low-frequency regime \(\mu\Delta t \ll 1\).
+\end{itemize}
+This directly tests the identification of the physical mass with the internal frequency scale.
+
+\textbf{Protocol 3: Massless versus massive modes.}
+Setting \(\mu=0\) (no coin rotation) realizes massless Dirac-like excitations with \(v_{\mathrm{ext}}=c\) and \(v_{\mathrm{int}}=0\). Comparing these with \(\mu\neq 0\) modes demonstrates the geometric trade-off between external and internal rates.
+
+\textbf{Protocol 4: Multi-particle systems.}
+Multi-particle quantum walks with interactions can probe corrections to the information-rate geometry in the presence of effective gauge fields, providing a route toward simulating QED-like theories on QCA substrates.
+
+\section{Discussion}
+
+\subsection{Comparison with previous work}
+
+The connection between quantum walks (QW), quantum cellular automata (QCA), and the Dirac equation has been extensively studied~\cite{dariano,strauch,chandrashekar,mallick}. Here we summarize key prior results and clarify the novelty of the present work.
+
+\textbf{Existing results.}
+\begin{itemize}
+\item[(i)] Strauch~\cite{strauch} and Chandrashekar~\cite{chandrashekar} showed that discrete-time quantum walks with appropriate coin operators yield Dirac-like effective Hamiltonians in the continuum limit \(a,\Delta t \to 0\).
+\item[(ii)] D'Ariano, Perinotti, and collaborators~\cite{dariano,bisio} systematically constructed free quantum field theories (Dirac, Weyl, Maxwell) from QCAs with specific symmetries, demonstrating that QCAs can serve as a discrete ontology for relativistic field theory.
+\item[(iii)] Mallick and Chandrashekar~\cite{mallick} gave explicit split-step QW realizations of Dirac cellular automata.
+\end{itemize}
+
+These works establish that Dirac dynamics emerges from QCA and QW in long-wavelength limits, but they do not identify a universal informational constraint underlying the kinematic structure of special relativity.
+
+\textbf{Novelty of the present work.}
+
+Our contribution has three main components.
+
+(1) \textit{Exact finite-lattice geometric identity.}
+Within the Dirac-type quantum walks defined by Eq.~(\ref{eq:update}), we show that the single-step unitary \(U(p) \in \mathrm{SU}(2)\) admits a natural decomposition in which the group velocity and a complementary internal rate satisfy
+\begin{equation}
+\frac{v_{\mathrm{ext}}(p)}{c} = \hat{n}(p)\cdot\hat{d}, \qquad \frac{v_{\mathrm{int}}(p)}{c} = |\hat{n}(p)\times\hat{d}|,
+\end{equation}
+where \(\hat{n}(p)\) is the Bloch axis and \(\hat{d}\) is the propagation direction. The unit-norm constraint \(|\hat{n}(p)|=1\) then implies \(v_{\mathrm{ext}}^2(p) + v_{\mathrm{int}}^2(p) = c^2\). This identity is mathematically simple but becomes physically nontrivial when combined with the following two points.
+
+(2) \textit{Operational significance via entanglement generation.}
+Proposition 1 shows that \(v_{\mathrm{int}}\) controls a rigorous upper bound on coin-position entanglement growth for narrow wave packets, \(S_{\mathrm{lin}}(1) \le 2\sigma_p^2\Delta t^2[v_{\mathrm{ext}}^2 + \kappa v_{\mathrm{int}}^2]\). Thus \(v_{\mathrm{int}}\) is not merely a geometric artifact. It governs the rate of quantum information generation. Together with the identification \(c = v_{\mathrm{LR}}\), the rate circle becomes a decomposition of the causal light-cone speed into external propagation and internal correlation-generation components. \textbf{This is the core new physical content of our work.}
+
+(3) \textit{Relativistic kinematics as geometric organization.}
+The identity \(v_{\mathrm{ext}}^2 + v_{\mathrm{int}}^2 = c^2\) provides a compact way to organize the familiar relativistic relations. Defining proper time via \(\mathrm{d}\tau = (v_{\mathrm{int}}/c)\,\mathrm{d}t\), we recover the energy-momentum relation \(E^2 = p^2c^2 + m^2c^4\), time dilation, and four-velocity normalization as consequences of Eq.~(\ref{eq:rate_circle}) applied to the Dirac dispersion. Previous work derives these from continuum dispersion analysis. We show that they can be viewed as geometric consequences of the SU(2) constraint together with the identification \(v_{\mathrm{int}}/c \approx mc^2/E\).
+
+(4) \textit{Experimental protocols.}
+We provide explicit protocols for measuring \(v_{\mathrm{ext}}\) and \(v_{\mathrm{int}}\) simultaneously on existing quantum-simulation platforms, with concrete parameter estimates. This operational grounding distinguishes our approach from purely formal QCA-to-continuum mappings.
+
+In summary, while existing work establishes the feasibility of deriving Dirac physics from discrete quantum dynamics, our work provides a compact geometric organization of relativistic kinematics within this Dirac QW class via the exact finite-lattice constraint \(v_{\mathrm{ext}}^2 + v_{\mathrm{int}}^2 = c^2\), and shows how to directly test this decomposition in quantum simulators.
+
+\subsection{Extensions and future directions}
+
+\textbf{Geometric observation and Lieb-Robinson velocity.}
+For the Dirac-type quantum walks studied here, the lattice velocity scale \(c = a/\Delta t\) plays a dual role. It is both (i) the single-particle massless group velocity and (ii) the Lieb-Robinson causal velocity \(v_{\mathrm{LR}}\) for this nearest-neighbor QCA (see A2). The information rate circle Eq.~(\ref{eq:rate_circle}) can therefore be written as \(v_{\mathrm{ext}}^2(p) + v_{\mathrm{int}}^2(p) = v_{\mathrm{LR}}^2\), so that the external and internal rates together saturate the causal light-cone speed.
+
+One can ask whether a similar geometric constraint holds for more general two-level Floquet QCAs beyond the Dirac class. As a simple illustration, consider a translation-invariant QCA with local Hilbert space \(\mathbb{C}^2\) per site, finite interaction range \(R\), and single-particle sector \(U(p) = e^{-i\Omega(p)\hat{n}(p)\cdot\vec{\sigma}}\). The Lieb-Robinson bound implies \(|v_{\mathrm{ext}}(p)| := |\mathrm{d}\omega/\mathrm{d}p| \le v_{\mathrm{LR}}\) for all \(p\)~\cite{nachtergaele}. For a chosen reference direction \(\hat{d} \in S^2\), one can always define \(v_{\mathrm{int}}(p) := v_{\mathrm{LR}}\,|\hat{n}(p)\times\hat{d}|\) and parametrize the group velocity as \(v_{\mathrm{ext}}(p) = \eta(p)\,v_{\mathrm{LR}}\,(\hat{n}\cdot\hat{d})\) for some function \(\eta(p) \in [-1,1]\). The unit-norm constraint \(|\hat{n}|^2=1\) then gives
+\begin{equation}
+v_{\mathrm{ext}}^2(p) + v_{\mathrm{int}}^2(p) = v_{\mathrm{LR}}^2\,\bigl[\eta^2(\hat{n}\cdot\hat{d})^2 + |\hat{n}\times\hat{d}|^2\bigr] \le v_{\mathrm{LR}}^2,
+\end{equation}
+with equality if and only if \(|\eta(p)| = 1\) for all \(p\). The Dirac-type walks of this paper achieve \(\eta(p) \equiv 1\) and hence saturate the bound at all \(p\).
+
+The physical content of this observation depends on whether the parametrization \(v_{\mathrm{ext}} = \eta\,v_{\mathrm{LR}}\,(\hat{n}\cdot\hat{d})\) is natural for a given model. For Dirac-type QCAs, this parametrization follows directly from the dispersion relation; for more general two-level QCAs, the relation between \(v_{\mathrm{ext}}\) and the Bloch geometry can be more complicated and the choice of \(\hat{d}\) less canonical. We therefore regard the above as a geometric reparametrization that highlights the special status of Dirac walks (they saturate \(v_{\mathrm{ext}}^2 + v_{\mathrm{int}}^2 = v_{\mathrm{LR}}^2\)) rather than as a general theorem for all Floquet QCAs. A systematic classification of models that admit such a rigid parametrization is an interesting question for future work.
+
+\textbf{Higher-dimensional generalizations.}
+We expect an analogous sphere constraint to hold in higher-dimensional Dirac-type QCA models, where \(\vec{v}_{\mathrm{ext}} \in \mathbb{R}^d\) collects the components of the group velocity. A schematic example is provided by the separable model
+\begin{equation}
+U(\vec{p}) = C(\mu) \prod_{j=1}^d T_j(p_j),
+\end{equation}
+where \(T_j(p_j) = \exp(-ip_j a \sigma_j)\) and the dispersion relation becomes \(\cos\Omega(\vec{p}) = \cos(\mu\Delta t)\prod_{j=1}^d\cos(p_j a)\). In this toy model the external velocity vector \(\vec{v}_{\mathrm{ext}} = (\partial\omega/\partial p_1, \ldots, \partial\omega/\partial p_d)\) and the internal velocity satisfy
+\begin{equation}
+|\vec{v}_{\mathrm{ext}}|^2 + v_{\mathrm{int}}^2 = c^2.
+\label{eq:sphere}
+\end{equation}
+
+A rigorous construction of Dirac-type QCAs in \(d>1\) spatial dimensions requires a careful treatment of spinor representations and gamma-matrix structures~\cite{dariano}, which may modify this simple sphere constraint. Equation~(\ref{eq:sphere}) should therefore be viewed as an illustrative example rather than a general theorem in higher dimensions. A full analysis is beyond the scope of this work.
+
+\textbf{Interacting theories and gauge fields.}
+Interactions and gauge fields modify the dispersion structure~\cite{brun2}. For example, minimal coupling to a U(1) gauge field corresponds to replacing \(p_j \to p_j - eA_j/\hbar c\) in the translation operators, which deforms the information-rate geometry. The constraint~(\ref{eq:sphere}) becomes coordinate dependent, with local variations encoding electromagnetic forces.
+
+\textbf{Extension to curved spacetime.}
+Extending the present approach to curved spacetime requires understanding how local variations in the QCA parameters---such as site-dependent coin angles \(\mu(x)\), coupling strengths, or lattice geometry---induce an effective metric. Preliminary analyses suggest that spatially varying parameters can encode optical-type metrics, offering a route to quantum simulation of general-relativistic phenomena. We leave a systematic treatment to future work.
+
+A more fundamental question is why nature, if described at a microscopic level by QCA-like dynamics, would select parameters satisfying A1--A3. One possibility is that these axioms follow from deeper consistency conditions, somewhat as Lorentz invariance follows from locality and causality in quantum field theory. Another is that multiple QCA ``universe models'' exist, with our observed physics selecting a particular class.
+
+Regardless of such foundational issues, the information rate circle establishes, within the Dirac QCA setting analyzed here, a precise correspondence between discrete quantum-information dynamics and the kinematic structure of relativistic geometry. Crucially, this correspondence is not merely formal. The internal rate \(v_{\mathrm{int}}\) controls a measurable quantum resource---coin-position entanglement generation (Proposition 1). This shows that the geometric constraint has direct operational significance in quantum information processing and suggests that spacetime may be viewed as an emergent description of information flow in quantum systems with finite local information capacity.
+
+\begin{acknowledgments}
+The authors thank [to be specified] for discussions on quantum cellular automata and quantum-walk experiments.
+\end{acknowledgments}
+
+\appendix
+
+\section{Low-energy expansion and relativistic dispersion}
+
+Here we provide the Taylor expansion used in the main text to derive the Dirac dispersion \(\omega^2(p) \approx \mu^2 + p^2 c^2\) from the exact lattice dispersion relation.
+
+From Eq.~(\ref{eq:dispersion}), \(\cos\Omega(p) = \cos(\mu\Delta t)\cos(pa)\), and in the low-energy regime \(\mu\Delta t, pa \ll 1\) we expand:
+\begin{align}
+\cos\Omega(p) &\approx 1 - \frac{\Omega^2}{2} + \mathcal{O}(\Omega^4), \\
+\cos(\mu\Delta t) &\approx 1 - \frac{(\mu\Delta t)^2}{2} + \mathcal{O}((\mu\Delta t)^4), \\
+\cos(pa) &\approx 1 - \frac{(pa)^2}{2} + \mathcal{O}((pa)^4).
+\end{align}
+Substituting and expanding the product to second order,
+\begin{align}
+\cos(\mu\Delta t)\cos(pa) &\approx \left(1-\frac{(\mu\Delta t)^2}{2}\right)\left(1-\frac{(pa)^2}{2}\right) \nonumber\\
+&\approx 1 - \frac{(\mu\Delta t)^2}{2} - \frac{(pa)^2}{2} + \mathcal{O}((\mu\Delta t)^2(pa)^2).
+\end{align}
+Equating to the expansion of \(\cos\Omega\) yields
+\begin{equation}
+\Omega^2(p) \approx (\mu\Delta t)^2 + (pa)^2.
+\end{equation}
+Dividing by \(\Delta t^2\) and using \(c = a/\Delta t\),
+\begin{equation}
+\omega^2(p) = \frac{\Omega^2(p)}{\Delta t^2} \approx \mu^2 + p^2 c^2.
+\end{equation}
+With physical energy \(E = \hbar\omega\), momentum \(p_{\mathrm{phys}} = \hbar p\), and mass \(m = \hbar\mu/c^2\), this gives
+\begin{equation}
+E^2(p) \approx p_{\mathrm{phys}}^2 c^2 + m^2c^4.
+\end{equation}
+
+\section{SU(2) multiplication and Bloch-axis derivation}
+
+The single-step update operator in the Dirac-QCA model is
+\begin{equation}
+U(p) = C(\mu) T(p) = e^{-i\mu\Delta t \hat{m}\cdot\vec{\sigma}} e^{-ipa\hat{d}\cdot\vec{\sigma}},
+\end{equation}
+where \(\hat{m}, \hat{d} \in S^2\) are orthogonal unit vectors. Both factors are elements of SU(2).
+
+The product of two SU(2) elements satisfies~\cite{sakurai}
+\begin{equation}
+e^{-i\alpha \hat{a}\cdot\vec{\sigma}} e^{-i\beta \hat{b}\cdot\vec{\sigma}} = e^{-i\gamma \hat{c}\cdot\vec{\sigma}},
+\end{equation}
+where the composition angle \(\gamma\) is determined by
+\begin{equation}
+\cos\gamma = \cos\alpha\cos\beta - (\hat{a}\cdot\hat{b})\sin\alpha\sin\beta.
+\label{eq:su2_cos}
+\end{equation}
+For \(\hat{a} = \hat{m}\), \(\hat{b} = \hat{d}\), \(\alpha = \mu\Delta t\), \(\beta = pa\), and \(\hat{m}\cdot\hat{d} = 0\), we have
+\begin{equation}
+\cos\gamma = \cos(\mu\Delta t)\cos(pa).
+\end{equation}
+Identifying \(\gamma = \Omega(p)\) yields the dispersion relation~(\ref{eq:dispersion}).
+
+The Bloch axis \(\hat{c}\) satisfies
+\begin{equation}
+\hat{c}\sin\gamma = \hat{a}\sin\alpha\cos\beta + \hat{b}\sin\beta\cos\alpha - (\hat{a}\times\hat{b})\sin\alpha\sin\beta.
+\end{equation}
+Substituting our parameters gives
+\begin{equation}
+\hat{n}(p)\sin\Omega(p) = \hat{m}\sin(\mu\Delta t)\cos(pa) + \hat{d}\sin(pa)\cos(\mu\Delta t) - (\hat{m}\times\hat{d})\sin(\mu\Delta t)\sin(pa),
+\end{equation}
+which is Eq.~(\ref{eq:bloch_vector}) in the main text.
+
+To obtain components in the natural frame \(\{\hat{e}_1=\hat{m}, \hat{e}_2=-\hat{m}\times\hat{d}, \hat{e}_3=\hat{d}\}\), we note that \(\hat{m} = \hat{e}_1\), \(\hat{d} = \hat{e}_3\), and \(\hat{m}\times\hat{d} = \hat{e}_1\times\hat{e}_3 = -\hat{e}_2\). Substituting into the vector equation and comparing coefficients of \(\hat{e}_j\) yields
+\begin{align}
+n_1\sin\Omega &= \sin(\mu\Delta t)\cos(pa), \\
+n_2\sin\Omega &= \sin(\mu\Delta t)\sin(pa), \\
+n_3\sin\Omega &= \cos(\mu\Delta t)\sin(pa),
+\end{align}
+which are Eqs.~(\ref{eq:n1})--(\ref{eq:n3}).
+
+\textit{Geometric verification of the information rate circle.---}
+From the group-velocity expression, \(v_{\mathrm{ext}}/c = n_3 = \hat{n}\cdot\hat{d}\). To verify the cross-product form of \(v_{\mathrm{int}}\), we compute
+\begin{equation}
+\hat{n}\times\hat{d} = (n_1\hat{e}_1 + n_2\hat{e}_2 + n_3\hat{e}_3)\times\hat{e}_3 = n_1(\hat{e}_1\times\hat{e}_3) + n_2(\hat{e}_2\times\hat{e}_3) = -n_1\hat{e}_2 + n_2\hat{e}_1,
+\end{equation}
+where we used \(\hat{e}_1\times\hat{e}_3 = -\hat{e}_2\) and \(\hat{e}_2\times\hat{e}_3 = \hat{e}_1\). Therefore,
+\begin{equation}
+|\hat{n}\times\hat{d}| = \sqrt{n_1^2 + n_2^2} = \frac{v_{\mathrm{int}}}{c},
+\end{equation}
+and the information rate circle follows from the standard identity
+\begin{equation}
+(\hat{n}\cdot\hat{d})^2 + |\hat{n}\times\hat{d}|^2 = |\hat{n}|^2|\hat{d}|^2 = 1,
+\end{equation}
+which upon multiplication by \(c^2\) yields \(v_{\mathrm{ext}}^2 + v_{\mathrm{int}}^2 = c^2\).
+
+\section{Algebraic verification of the information rate circle}
+
+We provide an algebraic verification of the information rate circle that complements the geometric proof in the main text.
+
+From the dispersion relation \(\cos\Omega = \cos(\mu\Delta t)\cos(pa)\), we have
+\begin{equation}
+\sin^2\Omega = 1 - \cos^2(\mu\Delta t)\cos^2(pa).
+\end{equation}
+From Eqs.~(\ref{eq:n1})--(\ref{eq:n3}),
+\begin{align}
+n_1 &= \frac{\sin(\mu\Delta t)\cos(pa)}{\sin\Omega}, \\
+n_2 &= \frac{\sin(\mu\Delta t)\sin(pa)}{\sin\Omega}, \\
+n_3 &= \frac{\cos(\mu\Delta t)\sin(pa)}{\sin\Omega}.
+\end{align}
+By definition,
+\begin{align}
+v_{\mathrm{ext}} &= c\,n_3 = c\,\frac{\cos(\mu\Delta t)\sin(pa)}{\sin\Omega}, \\
+v_{\mathrm{int}} &= c\sqrt{n_1^2 + n_2^2} = c\,\frac{\sin(\mu\Delta t)}{\sin\Omega},
+\end{align}
+where in the second line we used \(\cos^2(pa)+\sin^2(pa)=1\). Thus
+\begin{widetext}
+\begin{align}
+v_{\mathrm{ext}}^2 + v_{\mathrm{int}}^2 &= c^2\,\frac{\cos^2(\mu\Delta t)\sin^2(pa) + \sin^2(\mu\Delta t)}{\sin^2\Omega} \nonumber\\
+&= c^2\,\frac{\cos^2(\mu\Delta t)\sin^2(pa) + \sin^2(\mu\Delta t)\cos^2(pa) + \sin^2(\mu\Delta t)\sin^2(pa)}{\sin^2\Omega} \nonumber\\
+&= c^2\,\frac{\sin^2(pa)\bigl[\cos^2(\mu\Delta t) + \sin^2(\mu\Delta t)\bigr] + \sin^2(\mu\Delta t)\cos^2(pa)}{\sin^2\Omega} \nonumber\\
+&= c^2\,\frac{\sin^2(pa) + \sin^2(\mu\Delta t)\cos^2(pa)}{\sin^2\Omega}.
+\end{align}
+\end{widetext}
+On the other hand,
+\begin{align}
+\sin^2(pa) + \sin^2(\mu\Delta t)\cos^2(pa)
+&= 1 - \cos^2(pa) + \sin^2(\mu\Delta t)\cos^2(pa) \nonumber\\
+&= 1 - \cos^2(pa)\bigl[1-\sin^2(\mu\Delta t)\bigr] \nonumber\\
+&= 1 - \cos^2(pa)\cos^2(\mu\Delta t) \nonumber\\
+&= \sin^2\Omega.
+\end{align}
+Substituting back, we obtain \(v_{\mathrm{ext}}^2 + v_{\mathrm{int}}^2 = c^2\), as claimed.
+
+\section{Detailed derivation of the entanglement bound}
+
+Here we provide the full derivation of the narrow-wave-packet entanglement bound (Proposition 1), including the explicit inequalities and constants.
+
+The evolved state after one step is
+\begin{equation}
+\ket{\Psi_1} = \int \mathrm{d}p\, f(p)\,U(p)\ket{\chi}\otimes\ket{p}.
+\end{equation}
+Tracing out the position degree of freedom gives the reduced coin state
+\begin{equation}
+\rho_c(1) = \int \mathrm{d}p\, |f(p)|^2\,U(p)\ket{\chi}\bra{\chi}U^\dagger(p).
+\end{equation}
+Its linear entropy is
+\begin{equation}
+S_{\mathrm{lin}}(1) = 1 - \mathrm{Tr}\,\rho_c^2(1) = 1 - \iint \mathrm{d}p\,\mathrm{d}p'\,w(p)w(p')\,\bigl|\braket{\chi|U^\dagger(p)U(p')|\chi}\bigr|^2,
+\label{eq:Slin_exact}
+\end{equation}
+where \(w(p)=|f(p)|^2\).
+
+Assume that \(w(p)\) is sharply peaked around \(p_0\) with variance \(\sigma_p^2\). For \(|p-p_0|,|p'-p_0|\lesssim\sigma_p\), we expand
+\begin{equation}
+K(p) := \Omega(p)\,\hat{n}(p)\cdot\vec{\sigma}, \qquad U(p) = e^{-iK(p)},
+\end{equation}
+and write
+\begin{equation}
+U^\dagger(p)U(p') = e^{iK(p)}e^{-iK(p')} = \exp\bigl[-i(p'-p)\,\partial_p K(p_0)\bigr] + \mathcal{O}\bigl((p'-p)^2\bigr).
+\end{equation}
+Let \(G := \partial_p K(p_0)\) and \(\delta := p'-p\). In the narrow-wave-packet regime \(|\delta|\lesssim\sigma_p\) we can approximate \(U^\dagger(p)U(p') \approx e^{-i\delta G}\).
+
+For any Hermitian \(2\times 2\) matrix \(G\) we may write \(G = g\,\hat{u}\cdot\vec{\sigma}\) with \(g = \|G\|\) the operator norm and \(\hat{u}\) a unit vector. Then \(e^{-i\delta G} = e^{-i\delta g\,\hat{u}\cdot\vec{\sigma}}\) is a rotation on the Bloch sphere by angle \(2\delta g\) around axis \(\hat{u}\). For any pure coin state \(\ket{\chi}\) one has
+\begin{equation}
+1 - \bigl|\braket{\chi|e^{-i\delta G}|\chi}\bigr|^2 \le \sin^2(\delta g) \le \delta^2 g^2,
+\label{eq:overlap_bound}
+\end{equation}
+where the first inequality is saturated for suitable \(\ket{\chi}\), and the second uses \(\sin x\le x\).
+
+Substituting Eq.~(\ref{eq:overlap_bound}) into Eq.~(\ref{eq:Slin_exact}) and neglecting terms of order \(\mathcal{O}(\delta^3)\), we obtain
+\begin{align}
+S_{\mathrm{lin}}(1) &\le \iint \mathrm{d}p\,\mathrm{d}p'\,w(p)w(p')\,\delta^2\,\|G\|^2 + \mathcal{O}(\sigma_p^3) \nonumber\\
+&= \|G\|^2\,\mathbb{E}[(p'-p)^2] + \mathcal{O}(\sigma_p^3),
+\end{align}
+where the expectation value is taken with respect to the product measure \(w(p)w(p')\). Since \(p\) and \(p'\) are independent and identically distributed,
+\begin{equation}
+\mathbb{E}[(p'-p)^2] = \mathbb{E}[p'^2] + \mathbb{E}[p^2] - 2\mathbb{E}[p]\mathbb{E}[p'] = 2\sigma_p^2.
+\end{equation}
+Thus
+\begin{equation}
+S_{\mathrm{lin}}(1) \le 2\sigma_p^2\,\|G\|^2 + \mathcal{O}(\sigma_p^3).
+\label{eq:Slin_G_bound}
+\end{equation}
+
+It remains to bound \(\|G\|\) in terms of \(v_{\mathrm{ext}}\) and \(v_{\mathrm{int}}\). Using
+\begin{equation}
+G = \partial_p K(p_0) = (\partial_p\Omega)\,\hat{n}\cdot\vec{\sigma} + \Omega\,\partial_p\hat{n}\cdot\vec{\sigma},
+\end{equation}
+we find
+\begin{equation}
+\|G\|^2 = (\partial_p\Omega)^2 + \Omega^2|\partial_p\hat{n}|^2,
+\label{eq:G_norm}
+\end{equation}
+where \(\hat{n}\cdot\partial_p\hat{n}=0\) eliminates cross terms. For the Dirac walk, \(\partial_p\Omega = \Delta t\,v_{\mathrm{ext}}(p_0)\). In the low-energy regime \(\mu\Delta t, p_0 a\ll 1\), differentiation of Eqs.~(\ref{eq:n1})--(\ref{eq:n3}) shows that
+\begin{equation}
+|\partial_p\hat{n}(p_0)| \le \kappa'\,a\,\frac{\sin(\mu\Delta t)}{\sin^2\Omega(p_0)} = \kappa'\,\frac{a}{c}\,\frac{v_{\mathrm{int}}(p_0)}{c},
+\end{equation}
+for some numerical constant \(\kappa'=\mathcal{O}(1)\). Using \(c=a/\Delta t\) and the fact that \(\Omega(p_0)=\mathcal{O}(1)\) in the regime of interest, we can rewrite this as
+\begin{equation}
+\Omega^2(p_0)\,|\partial_p\hat{n}(p_0)|^2 \le \kappa\,\Delta t^2\,v_{\mathrm{int}}^2(p_0),
+\end{equation}
+with another order-one constant \(\kappa\). Substituting into Eq.~(\ref{eq:G_norm}) gives
+\begin{equation}
+\|G\|^2 \le \Delta t^2\Bigl[v_{\mathrm{ext}}^2(p_0) + \kappa\,v_{\mathrm{int}}^2(p_0)\Bigr].
+\end{equation}
+Combining this with Eq.~(\ref{eq:Slin_G_bound}) completes the proof of the bound.
+
+\begin{thebibliography}{99}
+
+\bibitem{dariano}
+G. M. D'Ariano and P. Perinotti,
+\emph{Quantum cellular automata and free quantum field theory},
+Phys. Rev. A \textbf{90}, 062106 (2014).
+
+\bibitem{bisio}
+A. Bisio, G. M. D'Ariano, and P. Perinotti,
+\emph{Quantum cellular automaton theory of light},
+Ann. Phys. \textbf{368}, 177 (2016).
+
+\bibitem{brun}
+T. A. Brun \emph{et al.},
+\emph{Quantum cellular automata and quantum field theory in two spatial dimensions},
+Phys. Rev. A \textbf{102}, 062222 (2020).
+
+\bibitem{trezzini}
+L. S. Trezzini,
+\emph{Renormalisation of quantum cellular automata},
+(unpublished).
+
+\bibitem{strauch}
+F. W. Strauch,
+\emph{Relativistic quantum walks},
+Phys. Rev. A \textbf{73}, 054302 (2006).
+
+\bibitem{chandrashekar}
+C. M. Chandrashekar,
+\emph{Two-component Dirac-like Hamiltonian for generating quantum walk on one-, two- and three-dimensional lattices},
+Sci. Rep. \textbf{3}, 2829 (2013).
+
+\bibitem{mallick}
+A. Mallick and C. M. Chandrashekar,
+\emph{Dirac cellular automaton from split-step quantum walk},
+Sci. Rep. \textbf{6}, 25779 (2016).
+
+\bibitem{lieb}
+E. H. Lieb and D. W. Robinson,
+\emph{The finite group velocity of quantum spin systems},
+Commun. Math. Phys. \textbf{28}, 251 (1972).
+
+\bibitem{nachtergaele}
+B. Nachtergaele and R. Sims,
+\emph{Much ado about something: why Lieb--Robinson bounds are useful},
+J. Stat. Phys. \textbf{124}, 1 (2006).
+
+\bibitem{sakurai}
+J. J. Sakurai and J. Napolitano,
+\emph{Modern Quantum Mechanics}, 2nd ed. (Cambridge University Press, 2017).
+
+\bibitem{alderete}
+C. H. Alderete \emph{et al.},
+\emph{Quantum walks and Dirac cellular automata on a trapped-ion quantum computer},
+npj Quantum Inf. \textbf{6}, 89 (2020).
+
+\bibitem{kumar}
+N. P. Kumar and C. M. Chandrashekar,
+\emph{Bounds on the dynamics of periodic quantum walks and emergence of the gapless and gapped Dirac equation},
+Phys. Rev. A \textbf{97}, 012116 (2018).
+
+\bibitem{brun2}
+T. A. Brun \emph{et al.},
+\emph{Quantum electrodynamics from quantum cellular automata},
+(unpublished).
+
+\end{thebibliography}
+
+\end{document}
+
+

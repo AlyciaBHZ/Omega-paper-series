@@ -1,0 +1,122 @@
+[
+  {
+    "config": {
+      "width_factor": 0.5,
+      "lr": 0.1,
+      "weight_decay": 0.0005,
+      "batch_size": 128,
+      "epochs": 200,
+      "momentum": 0.9,
+      "device": "cuda",
+      "noise_levels": [
+        0.0,
+        0.25,
+        0.5
+      ],
+      "power_iter_steps": 20,
+      "pac_delta": 0.01,
+      "prior_variance": 1.0
+    },
+    "clean_error": 0.2893,
+    "robust_errors": {
+      "rho_0.25": 0.8665,
+      "rho_0.5": 0.9347
+    },
+    "lipschitz_constant": 140327.94657387646,
+    "pac_bayes_bound": 0.39005119353081746,
+    "capability_risk_bounds": {
+      "bound_rho_0.25": 1.0,
+      "bound_rho_0.5": 1.0
+    }
+  },
+  {
+    "config": {
+      "width_factor": 1.0,
+      "lr": 0.1,
+      "weight_decay": 0.0005,
+      "batch_size": 128,
+      "epochs": 200,
+      "momentum": 0.9,
+      "device": "cuda",
+      "noise_levels": [
+        0.0,
+        0.25,
+        0.5
+      ],
+      "power_iter_steps": 20,
+      "pac_delta": 0.01,
+      "prior_variance": 1.0
+    },
+    "clean_error": 0.2592,
+    "robust_errors": {
+      "rho_0.25": 0.8666,
+      "rho_0.5": 0.9369
+    },
+    "lipschitz_constant": 10677.092072015468,
+    "pac_bayes_bound": 0.352706365168291,
+    "capability_risk_bounds": {
+      "bound_rho_0.25": 1.0,
+      "bound_rho_0.5": 1.0
+    }
+  },
+  {
+    "config": {
+      "width_factor": 2.0,
+      "lr": 0.1,
+      "weight_decay": 0.0005,
+      "batch_size": 128,
+      "epochs": 200,
+      "momentum": 0.9,
+      "device": "cuda",
+      "noise_levels": [
+        0.0,
+        0.25,
+        0.5
+      ],
+      "power_iter_steps": 20,
+      "pac_delta": 0.01,
+      "prior_variance": 1.0
+    },
+    "clean_error": 0.237,
+    "robust_errors": {
+      "rho_0.25": 0.8547,
+      "rho_0.5": 0.9299
+    },
+    "lipschitz_constant": 406.4622026396953,
+    "pac_bayes_bound": 0.3190505209199539,
+    "capability_risk_bounds": {
+      "bound_rho_0.25": 1.0,
+      "bound_rho_0.5": 1.0
+    }
+  },
+  {
+    "config": {
+      "width_factor": 1.0,
+      "lr": 0.1,
+      "weight_decay": 0.001,
+      "batch_size": 128,
+      "epochs": 200,
+      "momentum": 0.9,
+      "device": "cuda",
+      "noise_levels": [
+        0.0,
+        0.25,
+        0.5
+      ],
+      "power_iter_steps": 20,
+      "pac_delta": 0.01,
+      "prior_variance": 1.0
+    },
+    "clean_error": 0.25429999999999997,
+    "robust_errors": {
+      "rho_0.25": 0.8792,
+      "rho_0.5": 0.9410000000000001
+    },
+    "lipschitz_constant": 154.70522987791566,
+    "pac_bayes_bound": 0.3295162273337977,
+    "capability_risk_bounds": {
+      "bound_rho_0.25": 1.0,
+      "bound_rho_0.5": 1.0
+    }
+  }
+]

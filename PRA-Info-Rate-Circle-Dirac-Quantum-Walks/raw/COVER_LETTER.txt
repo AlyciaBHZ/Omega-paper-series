@@ -1,0 +1,42 @@
+Dear Editors,
+
+We submit the enclosed manuscript
+
+    "Information Rate Circle in Dirac Quantum Walks:
+     A Geometric Route to Relativistic Kinematics"
+
+for consideration as a Regular Article in Physical Review A.
+
+Our work identifies an exact finite-lattice geometric constraint in one-dimensional Dirac-type quantum cellular automata. For the single-particle unitary evolution U(p) = exp[-iΩ(p) n̂(p)·σ], the Bloch-axis decomposition relative to the propagation direction yields an identity valid at all momentum modes:
+
+    v_ext²(p) + v_int²(p) = c²,
+
+where v_ext is the group velocity, v_int is an internal rate derived from the Bloch geometry, and c is the Lieb-Robinson causal velocity. We term this the "information rate circle."
+
+The key advance is establishing operational significance for v_int. We prove (Proposition 1) that v_int controls a rigorous upper bound on coin-position entanglement generation for narrow wave packets, with the one-step linear entropy bounded by ~σ_p² Δt² v_int². This connects the geometric constraint directly to a measurable quantum information resource. Furthermore, in the low-energy continuum limit, v_int/c recovers the relativistic ratio mc²/E, allowing us to reorganize familiar special-relativistic relations (time dilation, energy-momentum relation E² = p²c² + m²c⁴) as consequences of the rate circle together with the SU(2) structure.
+
+Compared with previous work on quantum walks and quantum cellular automata (notably D'Ariano et al., Strauch, Chandrashekar), our contribution is threefold:
+
+(1) An exact finite-lattice identity (not a continuum limit);
+(2) An operational link to entanglement dynamics (Proposition 1);
+(3) Concrete experimental protocols with parameter estimates for trapped-ion and superconducting platforms.
+
+We provide two publication-quality figures visualizing the geometric decomposition and demonstrating the exactness of the circle relation across momentum modes.
+
+We believe this work will interest Physical Review A readers in quantum information science, quantum simulation, quantum walks and cellular automata, and the emergence of relativistic physics from discrete quantum dynamics.
+
+We confirm that this manuscript has not been published and is not under consideration elsewhere. All authors approve this submission.
+
+Thank you for your consideration.
+
+Sincerely,
+
+Haobo Ma
+Independent Researcher
+Email: [to be filled]
+
+Wenlin Zhang
+National University of Singapore
+Email: e1327962@u.nus.edu
+
+
