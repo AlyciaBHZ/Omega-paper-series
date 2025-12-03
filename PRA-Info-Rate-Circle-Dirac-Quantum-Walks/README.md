@@ -12,6 +12,15 @@
 
 ---
 
+### 📥 Documents / 文档
+
+| 📎 Document | Description |
+|-------------|-------------|
+| 📄 [**Full Paper (PDF)**](./Information%20rate%20circle%20in%20Dirac%20quantum%20walks.pdf) | Complete manuscript / 完整论文 |
+| 🎨 [**Visual Summary (PDF)**](./Spacetime_Emerges_From_Code.pdf) | Infographic presentation / 可视化展示 |
+
+---
+
 ### 📄 Abstract / 摘要
 
 **English:**

@@ -12,6 +12,15 @@
 
 ---
 
+### 📥 Documents / 文档
+
+| 📎 Document | Description |
+|-------------|-------------|
+| 📄 [**Full Paper (PDF)**](./Self-Referential%20Scattering%20and%20the%20Birth%20of%20Fermions%20-%20Riccati%20Square%20Roots%2C%20Spinor%20Double%20Cover%2C%20and%20a%20Z_2%20Exchange%20Phase.pdf) | Complete manuscript / 完整论文 |
+| 🎨 [**Visual Summary (PDF)**](./Z₂_Monodromy_Unified_Physics.pdf) | Infographic presentation / 可视化展示 |
+
+---
+
 ### 📄 Abstract / 摘要
 
 **English:**

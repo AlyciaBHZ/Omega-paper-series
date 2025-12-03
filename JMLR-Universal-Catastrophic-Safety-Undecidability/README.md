@@ -4,6 +4,14 @@
 
 ---
 
+### 📥 Documents / 文档
+
+| 📎 Document | Description |
+|-------------|-------------|
+| 📄 [**Full Paper (PDF)**](./universal-catastrophic-safety-undecidability-capability-risk-frontier_en.pdf) | Complete manuscript / 完整论文 |
+
+---
+
 ### 📄 Abstract / 摘要
 
 **English:**

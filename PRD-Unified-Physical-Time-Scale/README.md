@@ -4,6 +4,14 @@
 
 ---
 
+### 📥 Documents / 文档
+
+| 📎 Document | Description |
+|-------------|-------------|
+| 📄 [**Full Paper (PDF)**](./unified-physical-universe-terminal-object-scattering-time-scale-boundary-time-geometry-dirac-qca-continuum-limit_en_revtex.pdf) | Complete manuscript / 完整论文 |
+
+---
+
 ### 📄 Abstract / 摘要
 
 **English:**

@@ -4,6 +4,15 @@
 
 ---
 
+### 📥 Documents / 文档
+
+| 📎 Document | Description |
+|-------------|-------------|
+| 📄 [**Full Paper (PDF)**](./rbit.pdf) | Complete manuscript / 完整论文 |
+| 📄 [**Summary (PDF)**](./rbit_summary.pdf) | Research summary / 研究概要 |
+
+---
+
 ### 📄 Abstract / 摘要
 
 **English:**

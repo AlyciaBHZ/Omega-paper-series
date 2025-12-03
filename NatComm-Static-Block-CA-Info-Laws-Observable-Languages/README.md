@@ -12,6 +12,15 @@
 
 ---
 
+### 📥 Documents / 文档
+
+| 📎 Document | Description |
+|-------------|-------------|
+| 📄 [**Full Paper (PDF)**](./Static-Block%20Cellular%20Automata%20-%20Information%20Laws%20and%20Observable%20Languages.pdf) | Complete manuscript / 完整论文 |
+| 🎨 [**Visual Summary (PDF)**](./Information_Unifies_Spacetime.pdf) | Infographic presentation / 可视化展示 |
+
+---
+
 ### 📄 Abstract / 摘要
 
 **English:**

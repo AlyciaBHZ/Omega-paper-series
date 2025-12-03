@@ -16,17 +16,17 @@
 
 ## 📚 Paper Collection / 论文集
 
-| Paper | Journal | Full Title |
-|-------|---------|------------|
-| 📄 [Static-Block CA](./NatComm-Static-Block-CA-Info-Laws-Observable-Languages/) | Nature Comm | Static-Block Cellular Automata: Information Laws and Observable Languages |
-| 📄 [Einstein Equations](./JHEP-Einstein-Equations-Info-Geometric-Variational-Principle/) | JHEP | Einstein Equations from Information-Geometric Variational Principle |
-| 📄 [AI Safety](./JMLR-Universal-Catastrophic-Safety-Undecidability/) | JMLR | Universal Catastrophic Safety Undecidability and the Capability-Risk Frontier |
-| 📄 [Info Rate Circle](./PRA-Info-Rate-Circle-Dirac-Quantum-Walks/) | PRA | Information Rate Circle in Dirac Quantum Walks |
-| 📄 [Unified Time](./PRD-Unified-Physical-Time-Scale/) | PRD | Unified Physical Time Scale: Scattering Theory, Holographic Boundary, Dirac-QCA |
-| 📄 [Fermi Statistics](./PRL-Origin-Fermi-Dirac-Statistics-Topological-Impedance/) | PRL | Origin of Fermi-Dirac Statistics from Topological Impedance in QCA |
-| 📄 [Cosmological Phase](./PRL-Cosmological-Phase-Transitions-GW-Signatures/) | PRL | Cosmological Phase Transitions and GW Signatures from QCA |
-| 📄 [RBIT](./JSL-Resource-Bounded-Incompleteness-Theory/) | JSL | Resource-Bounded Incompleteness Theory |
-| 📄 [Self-Reference](./SciPost-Self-Referential-Scattering-Birth-of-Fermions/) | SciPost | Self-Referential Scattering and the Birth of Fermions |
+| Journal | Paper Title | Links |
+|:-------:|-------------|:-----:|
+| **Nature Comm** | [Static-Block Cellular Automata: Information Laws and Observable Languages](./NatComm-Static-Block-CA-Info-Laws-Observable-Languages/) | [📄 PDF](./NatComm-Static-Block-CA-Info-Laws-Observable-Languages/Static-Block%20Cellular%20Automata%20-%20Information%20Laws%20and%20Observable%20Languages.pdf) · [🎨 Visual](./NatComm-Static-Block-CA-Info-Laws-Observable-Languages/Information_Unifies_Spacetime.pdf) |
+| **JHEP** | [Einstein Equations from Information-Geometric Variational Principle](./JHEP-Einstein-Equations-Info-Geometric-Variational-Principle/) | [📄 PDF](./JHEP-Einstein-Equations-Info-Geometric-Variational-Principle/Einstein%20Equations%20from%20Information-Geometric%20Variational%20Principle%20-%20A%20Rigorous%20Derivation%20with%20Explicit%20Commutable%20Limit%20and%20Radon-Type%20Closure.pdf) · [🎨 Visual](./JHEP-Einstein-Equations-Info-Geometric-Variational-Principle/Information_Geometry_Constructs_Spacetime.pdf) |
+| **JMLR** | [Universal Catastrophic Safety Undecidability and the Capability-Risk Frontier](./JMLR-Universal-Catastrophic-Safety-Undecidability/) | [📄 PDF](./JMLR-Universal-Catastrophic-Safety-Undecidability/universal-catastrophic-safety-undecidability-capability-risk-frontier_en.pdf) |
+| **PRA** | [Information Rate Circle in Dirac Quantum Walks](./PRA-Info-Rate-Circle-Dirac-Quantum-Walks/) | [📄 PDF](./PRA-Info-Rate-Circle-Dirac-Quantum-Walks/Information%20rate%20circle%20in%20Dirac%20quantum%20walks.pdf) · [🎨 Visual](./PRA-Info-Rate-Circle-Dirac-Quantum-Walks/Spacetime_Emerges_From_Code.pdf) |
+| **PRD** | [Unified Physical Time Scale: Scattering, Holography, Dirac-QCA](./PRD-Unified-Physical-Time-Scale/) | [📄 PDF](./PRD-Unified-Physical-Time-Scale/unified-physical-universe-terminal-object-scattering-time-scale-boundary-time-geometry-dirac-qca-continuum-limit_en_revtex.pdf) |
+| **PRL** | [Origin of Fermi-Dirac Statistics from Topological Impedance in QCA](./PRL-Origin-Fermi-Dirac-Statistics-Topological-Impedance/) | *Coming soon* |
+| **PRL** | [Cosmological Phase Transitions and GW Signatures from QCA](./PRL-Cosmological-Phase-Transitions-GW-Signatures/) | [📄 PDF](./PRL-Cosmological-Phase-Transitions-GW-Signatures/Cosmological_phase_transitions.pdf) · [🎨 Visual](./PRL-Cosmological-Phase-Transitions-GW-Signatures/Listening_for_the_Code_of_Reality.pdf) |
+| **JSL** | [Resource-Bounded Incompleteness Theory](./JSL-Resource-Bounded-Incompleteness-Theory/) | [📄 PDF](./JSL-Resource-Bounded-Incompleteness-Theory/rbit.pdf) |
+| **SciPost** | [Self-Referential Scattering and the Birth of Fermions](./SciPost-Self-Referential-Scattering-Birth-of-Fermions/) | [📄 PDF](./SciPost-Self-Referential-Scattering-Birth-of-Fermions/Self-Referential%20Scattering%20and%20the%20Birth%20of%20Fermions%20-%20Riccati%20Square%20Roots%2C%20Spinor%20Double%20Cover%2C%20and%20a%20Z_2%20Exchange%20Phase.pdf) · [🎨 Visual](./SciPost-Self-Referential-Scattering-Birth-of-Fermions/Z₂_Monodromy_Unified_Physics.pdf) |
 
 ---
 

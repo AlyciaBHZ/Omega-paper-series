@@ -12,6 +12,15 @@
 
 ---
 
+### 📥 Documents / 文档
+
+| 📎 Document | Description |
+|-------------|-------------|
+| 📄 [**Full Paper (PDF)**](./Einstein%20Equations%20from%20Information-Geometric%20Variational%20Principle%20-%20A%20Rigorous%20Derivation%20with%20Explicit%20Commutable%20Limit%20and%20Radon-Type%20Closure.pdf) | Complete manuscript / 完整论文 |
+| 🎨 [**Visual Summary (PDF)**](./Information_Geometry_Constructs_Spacetime.pdf) | Infographic presentation / 可视化展示 |
+
+---
+
 ### 📄 Abstract / 摘要
 
 **English:**

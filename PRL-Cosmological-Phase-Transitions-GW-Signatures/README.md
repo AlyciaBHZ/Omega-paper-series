@@ -12,6 +12,16 @@
 
 ---
 
+### 📥 Documents / 文档
+
+| 📎 Document | Description |
+|-------------|-------------|
+| 📄 [**Full Paper (PDF)**](./Cosmological_phase_transitions.pdf) | Main manuscript / 主论文 |
+| 📄 [**Supplementary (PDF)**](./Supplementary.pdf) | Supplementary materials / 补充材料 |
+| 🎨 [**Visual Summary (PDF)**](./Listening_for_the_Code_of_Reality.pdf) | Infographic presentation / 可视化展示 |
+
+---
+
 ### 📄 Abstract / 摘要
 
 **English:**

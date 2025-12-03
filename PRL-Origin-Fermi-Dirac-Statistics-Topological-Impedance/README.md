@@ -4,6 +4,14 @@
 
 ---
 
+### 📥 Documents / 文档
+
+| 📎 Document | Description |
+|-------------|-------------|
+| 📄 **Full Paper** | *Coming soon* / 即将发布 |
+
+---
+
 ### 📄 Abstract / 摘要
 
 **English:**
